@@ -1,0 +1,208 @@
+require 'json'
+require 'open-uri'
+
+$pwd="KGbeMEMdv3mz5v9L"
+
+def step(description)
+  description = "--- #{description} "
+  puts "\e[32m#{description}\e[0m"
+end
+
+$tools = JSON.parse(File.read('tools.config'))
+
+$type = $tools['conf-type']
+
+def get_config_value(key, def_value = nil)
+  return $tools[key] if $tools.has_key?(key)
+  def_value
+end
+
+
+def get_config_url(sub)
+  host = get_config_value('config-url')
+  if host[-1] != '/'
+    host += '/'
+  end
+  if sub
+    host += sub
+  end
+  host
+end
+
+def get_sheet_name(path)
+  sheet = $tools['jsonsheet']
+  found = sheet.keys.select do |k|
+    subarr = sheet[k]
+    subarr = subarr.select do |full|
+      full.index(path)
+    end
+    subarr.length > 0
+  end
+  ret = nil
+  if found
+    ret = found[0]
+  end
+  ret
+end
+
+def merge_conf(sheet)
+  files = $tools['jsonsheet'][sheet]
+
+  merge_obj = {}
+
+  files.each do |file|
+    obj = JSON.parse(File.read(file))
+
+    filename = File.basename(file)
+
+    aliasObj = $tools['alias']
+    if aliasObj and aliasObj.has_key?(filename)
+      filename = aliasObj[filename]
+    else
+      filename = filename.gsub('.', '_')
+    end
+
+    merge_obj[filename] = obj
+  end
+
+  filepath = File.join(get_config_value('conf-save-path'), sheet)
+  step filepath
+  File.write(filepath, JSON.generate(merge_obj))
+end
+
+$sheets = []
+
+define_method :down_conf do |path|
+  obj = JSON.parse(File.read('./gameconfig.ini'))
+
+  if obj[path] == nil
+    throw '不存在的配置文件:' + path
+    return
+  end
+
+  if $type == 'json'
+    sheet = get_sheet_name(path)
+    if sheet and $sheets.index(sheet) == nil
+      $sheets.push(sheet)
+    end
+  end
+
+  url = get_config_url('download/getfile?cId=' + obj[path] + '&type=json&pwd=' + $pwd + '&branch=master')
+  step '下载地址：' + url
+  #content = open(url, 'User-Agent' => 'ruby') {|f| f.read}
+  begin
+    content = open(url, 'User-Agent' => 'ruby') {|f| f.read}
+  rescue => e
+    p '下载配置错误:' + e.io.status[0] + ' ' + e.io.status[1]
+    puts "%s" % [e.io.metas['err-msg'][0]]
+    exit(-1)
+  end
+
+  ext = '.json'
+  if $type == 'php'
+    ext = '.conf.php'
+  end
+  if $type == 'go'
+    ext = '.conf.go'
+  end
+  filepath = File.join(get_config_value('extra-save-path'), path + ext)
+
+  File.write(filepath, content)
+
+  step '文件写入：' + filepath
+
+  # 判断API路径是否存在
+  dirpath = get_config_value('conf-save-path')
+  if File::exist?(dirpath)
+      filepath2 = File.join(get_config_value('conf-save-path'), path + ext)
+      File.write(filepath2, content)
+      step '文件写入：' + filepath2
+  end
+
+    include = ["param"]
+    if include.index(path)
+      sh "php ./tools/CodeTool.php"
+    end
+end
+
+task :conf do
+  step '同步配置文件'
+  $sheets = []
+  files = ARGV[1..-1]
+  files.each { |file| task file.to_sym do; end }
+
+  if (files.index('all')) != nil
+    items = JSON.parse(File.read('./gameconfig.ini'))
+    items.each do |k,v|
+      down_conf k
+    end
+
+    if $type == 'json'
+
+      $tools['jsonsheet'].each do |k,v|
+        merge_conf k
+      end
+
+    end
+
+  else
+    files.each do |file|
+      down_conf file
+    end
+
+    if $type == 'json'
+      step '合并sheet'
+      $sheets.each do |sheet|
+        merge_conf sheet
+      end
+    end
+  end
+end
+
+task :gameconfig do
+  step '同步配置平台配置项'
+
+  url = get_config_url('category/apilist?pwd='+$pwd + '&branch=release316')
+
+  content = open(url, 'User-Agent' => 'ruby') {|f| f.read}
+  arr = content.split("\n")
+
+  new_buffers = []
+
+  obj = {}
+
+  arr.each do |line|
+    sub_arr = line.split(/\s+/)
+    if sub_arr.length >= 4
+      id = sub_arr[0]
+      name = sub_arr[3]
+      obj[name] = id
+    end
+  end
+
+  filepath = File.join('.', 'gameconfig.ini')
+  File.write(filepath, JSON.pretty_generate(obj))
+
+  step '文件写入：' + filepath
+
+end
+
+
+task :delete do
+    step '删除无用配置'
+    confDir = get_config_value('conf-save-path')
+    # 排除的文件
+    exclude = [".","..","17monipdb.datx","dirty.txt","errorcode.conf.php",".DS_Store","dev_user.conf.php"]
+    items = JSON.parse(File.read('./gameconfig.ini'))
+    items.each do |k,v|
+      name = k + '.conf.php'
+      exclude << name
+    end
+
+    Dir.foreach(get_config_value('conf-save-path')) do |d|
+        if exclude.index(d)
+        else
+            sh "rm ./#{confDir}/#{d}"
+        end
+    end
+end

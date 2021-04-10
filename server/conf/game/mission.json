@@ -1,0 +1,7265 @@
+{
+	"//": {
+		"Sheet1.id": "副本ID",
+		"Sheet1.next": "下一个副本",
+		"Sheet1.name": "副本名字",
+		"Sheet1.groupId": "副本组ID",
+		"Sheet1.pk": "是否可攻击玩家0=否，1=是，2=只能攻击归属者",
+		"Sheet1.chase": "是否有展昭0=否，1=有",
+		"Sheet1.isShow": "是否展示",
+		"Sheet1.lv": "关卡等级",
+		"Sheet1.condition": "前置条件（1=击杀，2=神兵等级，3=经脉等级，4=缘分等级，5=完成主线任务ID，6=药浴等级，7=装备大师等级，8=头像框, 9=N级装备, 10=人物等级, 11=武学宗师等级, 12=击杀N只地图怪）",
+		"Sheet1.tip": "提示文本",
+		"Sheet1.task": "任务范围，当前进度",
+		"Sheet1.taskId": "一定任务进度之后BOSS及与BOSS相关的才会出现，当前任务进度之后",
+		"Sheet1.cd": "进入的冷却",
+		"Sheet1.npc": "门派掌门等（npc表）",
+		"Sheet1.special": "特殊怪",
+		"Sheet1.npcMonster": "关卡中剧情NPC（monster表）",
+		"Sheet1.bossId": "worldboss表",
+		"Sheet1.bossPosition": "BOSS位置",
+		"Sheet1.monsterId": "怪物id",
+		"Sheet1.eliteMonster": "精英怪id",
+		"Sheet1.eliteMonsterPro": "精英怪出现万分比",
+		"Sheet1.plot": "对话",
+		"Sheet1.taskBossId": "主线任务BOSSID",
+		"Sheet1.dongfang": "是否会刷东方",
+		"Sheet1.taskMonsterId": "主线任务怪物",
+		"Sheet1.escortRobot": "是否有押镖机器人",
+		"Sheet1.expAdd": "经验加成（每多一个人增加的百分比）",
+		"Sheet1.expAddMax": "经验加成上限",
+		"Sheet1.drop": "1=武学币2=杀气3=强化石4=药材5=突破材料",
+		"Sheet1.alive": "买活次数",
+		"plot.groupId": "对话组",
+		"plot.id": "副本组id",
+		"plot.type": "触发类型",
+		"plot.word": "对话内容",
+		"word.groupId": "对话组",
+		"word.pId": "对话ID",
+		"word.role": "0旁白1玩家2npc3怪物",
+		"word.cId": "谁说的这句话",
+		"word.res": "配音",
+		"word.desc": "对话内容",
+		"word.dir": "弹出对话的位置（1左上2右上3左下4右下）",
+		"salt":"d05381fc1661300047dc873317958cdc"
+	},
+	"201": {
+		"id": 201,
+		"next": 202,
+		"name": "姑苏河畔",
+		"groupId": 2,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "102",
+		"bossPosition": {
+			"102" : [
+	-100,
+	0
+],
+			"1102" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "104,104,104,104,104",
+		"eliteMonster": 103,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 20101,
+				"id": 201,
+				"type": {
+					"normal" : [
+	102
+]
+				},
+				"word": [
+					{
+						"groupId": 20101,
+						"pId": 1,
+						"role": 3,
+						"cId": "102",
+						"desc": "没公子允可，我可不敢划船相送",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20102,
+				"id": 201,
+				"type": {
+					"normal" : [
+	1102
+]
+				},
+				"word": [
+					{
+						"groupId": 20102,
+						"pId": 2,
+						"role": 3,
+						"cId": "1102",
+						"desc": "没公子允可，我可不敢划船相送",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20103,
+				"id": 201,
+				"type": {
+					"fhit" : 102
+				},
+				"word": [
+					{
+						"groupId": 20103,
+						"pId": 3,
+						"role": 3,
+						"cId": "102",
+						"res": "map_2_137_1",
+						"desc": "你凶巴巴的，倒也吓煞不了我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20104,
+				"id": 201,
+				"type": {
+					"fhit" : 1102
+				},
+				"word": [
+					{
+						"groupId": 20104,
+						"pId": 4,
+						"role": 3,
+						"cId": "1102",
+						"res": "map_2_137_1",
+						"desc": "你凶巴巴的，倒也吓煞不了我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20105,
+				"id": 201,
+				"type": {
+					"hit" : 102
+				},
+				"word": [
+					{
+						"groupId": 20105,
+						"pId": 5,
+						"role": 3,
+						"cId": "102",
+						"desc": "啊哟，我小丫头认输啦",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20106,
+				"id": 201,
+				"type": {
+					"hit" : 1102
+				},
+				"word": [
+					{
+						"groupId": 20106,
+						"pId": 6,
+						"role": 3,
+						"cId": "1102",
+						"desc": "啊哟，我小丫头认输啦",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"taskBossId": "1102",
+		"taskMonsterId": "1104,1104,1104,1104,1104",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"202": {
+		"id": 202,
+		"next": 0,
+		"name": "姑苏岛",
+		"groupId": 2,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"12" : 1
+		},
+		"tip": "请先击败碧儿才能上船",
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "105",
+		"bossPosition": {
+			"105" : [
+	0,
+	0
+],
+			"1105" : [
+	0,
+	0
+]
+		},
+		"monsterId": "107,107,107,107,107",
+		"eliteMonster": 106,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 20201,
+				"id": 202,
+				"type": {
+					"normal" : [
+	105
+]
+				},
+				"word": [
+					{
+						"groupId": 20201,
+						"pId": 7,
+						"role": 3,
+						"cId": "105",
+						"desc": "说，你家公子将嫣儿藏哪里去了？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20202,
+				"id": 202,
+				"type": {
+					"normal" : [
+	1105
+]
+				},
+				"word": [
+					{
+						"groupId": 20202,
+						"pId": 8,
+						"role": 3,
+						"cId": "1105",
+						"desc": "说，你家公子将嫣儿藏哪里去了？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20203,
+				"id": 202,
+				"type": {
+					"fhit" : 105
+				},
+				"word": [
+					{
+						"groupId": 20203,
+						"pId": 9,
+						"role": 3,
+						"cId": "105",
+						"res": "map_2_156_1",
+						"desc": "你仗着谁的势头了，胆敢冲撞于我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20204,
+				"id": 202,
+				"type": {
+					"fhit" : 1105
+				},
+				"word": [
+					{
+						"groupId": 20204,
+						"pId": 10,
+						"role": 3,
+						"cId": "1105",
+						"res": "map_2_156_1",
+						"desc": "你仗着谁的势头了，胆敢冲撞于我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20205,
+				"id": 202,
+				"type": {
+					"hit" : 105
+				},
+				"word": [
+					{
+						"groupId": 20205,
+						"pId": 11,
+						"role": 3,
+						"cId": "105",
+						"desc": "我非得剁你双足，教你生不如死",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 20206,
+				"id": 202,
+				"type": {
+					"hit" : 1105
+				},
+				"word": [
+					{
+						"groupId": 20206,
+						"pId": 12,
+						"role": 3,
+						"cId": "1105",
+						"desc": "我非得剁你双足，教你生不如死",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"taskBossId": "1105",
+		"taskMonsterId": "1107,1107,1107,1107,1107",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"301": {
+		"id": 301,
+		"next": 302,
+		"name": "石剑林",
+		"groupId": 3,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 10,
+		"bossId": "108",
+		"bossPosition": {
+			"108" : [
+	0,
+	0
+],
+			"1108" : [
+	0,
+	0
+]
+		},
+		"monsterId": "110,110,110,110,110",
+		"eliteMonster": 109,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 30101,
+				"id": 301,
+				"type": {
+					"normal" : [
+	108
+]
+				},
+				"word": [
+					{
+						"groupId": 30101,
+						"pId": 13,
+						"role": 3,
+						"cId": "108",
+						"desc": "咝，咝",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30102,
+				"id": 301,
+				"type": {
+					"normal" : [
+	1108
+]
+				},
+				"word": [
+					{
+						"groupId": 30102,
+						"pId": 14,
+						"role": 3,
+						"cId": "1108",
+						"desc": "咝，咝",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30103,
+				"id": 301,
+				"type": {
+					"fhit" : 108
+				},
+				"word": [
+					{
+						"groupId": 30103,
+						"pId": 15,
+						"role": 3,
+						"cId": "108",
+						"res": "map_3_3002_1",
+						"desc": "咝，咝咝咝！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30104,
+				"id": 301,
+				"type": {
+					"fhit" : 1108
+				},
+				"word": [
+					{
+						"groupId": 30104,
+						"pId": 16,
+						"role": 3,
+						"cId": "1108",
+						"res": "map_3_3002_1",
+						"desc": "咝，咝咝咝！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30105,
+				"id": 301,
+				"type": {
+					"hit" : 108
+				},
+				"word": [
+					{
+						"groupId": 30105,
+						"pId": 17,
+						"role": 3,
+						"cId": "108",
+						"desc": "咝…咝咝…",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30106,
+				"id": 301,
+				"type": {
+					"hit" : 1108
+				},
+				"word": [
+					{
+						"groupId": 30106,
+						"pId": 18,
+						"role": 3,
+						"cId": "1108",
+						"desc": "咝…咝咝…",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"taskBossId": "1108",
+		"taskMonsterId": "1110,1110,1110,1110,1110",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"302": {
+		"id": 302,
+		"next": 0,
+		"name": "剑冢内",
+		"groupId": 3,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 10,
+		"bossId": "111",
+		"bossPosition": {
+			"111" : [
+	0,
+	0
+],
+			"1111" : [
+	0,
+	0
+]
+		},
+		"monsterId": "113,113,113,113,113",
+		"eliteMonster": 112,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 30201,
+				"id": 302,
+				"type": {
+					"normal" : [
+	111
+]
+				},
+				"word": [
+					{
+						"groupId": 30201,
+						"pId": 19,
+						"role": 3,
+						"cId": "111",
+						"desc": "啾，啾啾",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30202,
+				"id": 302,
+				"type": {
+					"normal" : [
+	1111
+]
+				},
+				"word": [
+					{
+						"groupId": 30202,
+						"pId": 20,
+						"role": 3,
+						"cId": "1111",
+						"desc": "啾，啾啾",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30203,
+				"id": 302,
+				"type": {
+					"fhit" : 111
+				},
+				"word": [
+					{
+						"groupId": 30203,
+						"pId": 21,
+						"role": 3,
+						"cId": "111",
+						"res": "map_3_164_1",
+						"desc": "啾啾，啾啾！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30204,
+				"id": 302,
+				"type": {
+					"fhit" : 1111
+				},
+				"word": [
+					{
+						"groupId": 30204,
+						"pId": 22,
+						"role": 3,
+						"cId": "1111",
+						"res": "map_3_164_1",
+						"desc": "啾啾，啾啾！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30205,
+				"id": 302,
+				"type": {
+					"hit" : 111
+				},
+				"word": [
+					{
+						"groupId": 30205,
+						"pId": 23,
+						"role": 3,
+						"cId": "111",
+						"desc": "啾啾…啾…啾啾…",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 30206,
+				"id": 302,
+				"type": {
+					"hit" : 1111
+				},
+				"word": [
+					{
+						"groupId": 30206,
+						"pId": 24,
+						"role": 3,
+						"cId": "1111",
+						"desc": "啾啾…啾…啾啾…",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"taskBossId": "1111",
+		"taskMonsterId": "1113,1113,1113,1113,1113",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"401": {
+		"id": 401,
+		"next": 402,
+		"name": "铸剑山庄",
+		"groupId": 4,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 15,
+		"bossId": "114",
+		"bossPosition": {
+			"1114" : [
+	-250,
+	0
+],
+			"114" : [
+	-250,
+	0
+]
+		},
+		"monsterId": "116,116,116,116,116",
+		"eliteMonster": 115,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 40101,
+				"id": 401,
+				"type": {
+					"normal" : [
+	114
+]
+				},
+				"word": [
+					{
+						"groupId": 40101,
+						"pId": 25,
+						"role": 3,
+						"cId": "114",
+						"desc": "若要入庄，须得过了验兵石这关",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40102,
+				"id": 401,
+				"type": {
+					"normal" : [
+	1114
+]
+				},
+				"word": [
+					{
+						"groupId": 40102,
+						"pId": 26,
+						"role": 3,
+						"cId": "1114",
+						"desc": "若要入庄，须得过了验兵石这关",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40103,
+				"id": 401,
+				"type": {
+					"fhit" : 114
+				},
+				"word": [
+					{
+						"groupId": 40103,
+						"pId": 27,
+						"role": 3,
+						"cId": "114",
+						"res": "map_4_167_1",
+						"desc": "贵派威名远震，望阁下不吝赐教",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40104,
+				"id": 401,
+				"type": {
+					"fhit" : 1114
+				},
+				"word": [
+					{
+						"groupId": 40104,
+						"pId": 28,
+						"role": 3,
+						"cId": "1114",
+						"res": "map_4_167_1",
+						"desc": "贵派威名远震，望阁下不吝赐教",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40105,
+				"id": 401,
+				"type": {
+					"hit" : 114
+				},
+				"word": [
+					{
+						"groupId": 40105,
+						"pId": 29,
+						"role": 3,
+						"cId": "114",
+						"desc": "贵派的功夫已尽于此了吗？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40106,
+				"id": 401,
+				"type": {
+					"hit" : 1114
+				},
+				"word": [
+					{
+						"groupId": 40106,
+						"pId": 30,
+						"role": 3,
+						"cId": "1114",
+						"desc": "贵派的功夫已尽于此了吗？",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"taskBossId": "1114",
+		"taskMonsterId": "1116,1116,1116,1116,1116",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"402": {
+		"id": 402,
+		"next": 0,
+		"name": "品剑厅",
+		"groupId": 4,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"2" : 3
+		},
+		"task": "0",
+		"taskId": 0,
+		"cd": 15,
+		"bossId": "117",
+		"bossPosition": {
+			"1117" : [
+	0,
+	0
+],
+			"117" : [
+	0,
+	0
+]
+		},
+		"monsterId": "119,119,119,119,119",
+		"eliteMonster": 118,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 40201,
+				"id": 402,
+				"type": {
+					"normal" : [
+	117
+]
+				},
+				"word": [
+					{
+						"groupId": 40201,
+						"pId": 31,
+						"role": 3,
+						"cId": "117",
+						"desc": "既是品剑会，当得在兵刃上分胜败",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40202,
+				"id": 402,
+				"type": {
+					"normal" : [
+	1117
+]
+				},
+				"word": [
+					{
+						"groupId": 40202,
+						"pId": 32,
+						"role": 3,
+						"cId": "1117",
+						"desc": "既是品剑会，当得在兵刃上分胜败",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40203,
+				"id": 402,
+				"type": {
+					"fhit" : 117
+				},
+				"word": [
+					{
+						"groupId": 40203,
+						"pId": 33,
+						"role": 3,
+						"cId": "117",
+						"res": "map_4_112_1",
+						"desc": "阁下的兵刃旷绝一世，我先来领教",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40204,
+				"id": 402,
+				"type": {
+					"fhit" : 1117
+				},
+				"word": [
+					{
+						"groupId": 40204,
+						"pId": 34,
+						"role": 3,
+						"cId": "1117",
+						"res": "map_4_112_1",
+						"desc": "阁下的兵刃旷绝一世，我先来领教",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40205,
+				"id": 402,
+				"type": {
+					"hit" : 117
+				},
+				"word": [
+					{
+						"groupId": 40205,
+						"pId": 35,
+						"role": 3,
+						"cId": "117",
+						"desc": "可惜阁下武功浅薄，配不上此剑",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 40206,
+				"id": 402,
+				"type": {
+					"hit" : 1117
+				},
+				"word": [
+					{
+						"groupId": 40206,
+						"pId": 36,
+						"role": 3,
+						"cId": "1117",
+						"desc": "可惜阁下武功浅薄，配不上此剑",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"taskBossId": "1117",
+		"taskMonsterId": "1119,1119,1119,1119,1119",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"501": {
+		"id": 501,
+		"next": 502,
+		"name": "哀牢山脚",
+		"groupId": 5,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 20,
+		"bossId": "121",
+		"bossPosition": {
+			"1121" : [
+	-100,
+	0
+],
+			"121" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "122,122,122,122,122",
+		"plot": [
+			{
+				"groupId": 50101,
+				"id": 501,
+				"type": {
+					"normal" : [
+	121
+]
+				},
+				"word": [
+					{
+						"groupId": 50101,
+						"pId": 37,
+						"role": 3,
+						"cId": "121",
+						"desc": "老子跟你好声好气，别不知好歹",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 50102,
+				"id": 501,
+				"type": {
+					"fhit" : 120
+				},
+				"word": [
+					{
+						"groupId": 50102,
+						"pId": 38,
+						"role": 3,
+						"cId": "121",
+						"res": "map_5_169_1",
+						"desc": "不要命的小贼，巴巴的赶来送死",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 50103,
+				"id": 501,
+				"type": {
+					"hit" : 120
+				},
+				"word": [
+					{
+						"groupId": 50103,
+						"pId": 39,
+						"role": 3,
+						"cId": "121",
+						"desc": "老子功夫练到家了，全身没罩门！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"taskBossId": "1121",
+		"taskMonsterId": "1122,1122,1122,1122,1122",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"502": {
+		"id": 502,
+		"next": 0,
+		"name": "哀牢山顶",
+		"groupId": 5,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"9" : 3
+		},
+		"tip": "未拥有一件强化三级装备，被箭射伤",
+		"task": "0",
+		"taskId": 0,
+		"cd": 20,
+		"bossId": "120",
+		"bossPosition": {
+			"120" : [
+	0,
+	0
+]
+		},
+		"monsterId": "123,123,123,123,123",
+		"plot": [
+			{
+				"groupId": 50201,
+				"id": 502,
+				"type": {
+					"normal" : [
+	120
+]
+				},
+				"word": [
+					{
+						"groupId": 50201,
+						"pId": 40,
+						"role": 3,
+						"cId": "120",
+						"desc": "你再不识相些，老娘拿你作靶练功",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 50202,
+				"id": 502,
+				"type": {
+					"fhit" : 121
+				},
+				"word": [
+					{
+						"groupId": 50202,
+						"pId": 41,
+						"role": 3,
+						"cId": "120",
+						"res": "map_5_103_1",
+						"desc": "哪里钻出来的野种，敢来暗算老娘",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 50203,
+				"id": 502,
+				"type": {
+					"hit" : 121
+				},
+				"word": [
+					{
+						"groupId": 50203,
+						"pId": 42,
+						"role": 3,
+						"cId": "120",
+						"desc": "想逃？现已迟了！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"601": {
+		"id": 601,
+		"next": 602,
+		"name": "重阳宫",
+		"groupId": 6,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 25,
+		"npc": "170",
+		"bossId": "125",
+		"bossPosition": {
+			"125" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "127,127,127,127,127",
+		"eliteMonster": 126,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 60101,
+				"id": 601,
+				"type": {
+					"normal" : [
+	125
+]
+				},
+				"word": [
+					{
+						"groupId": 60101,
+						"pId": 43,
+						"role": 2,
+						"cId": "170",
+						"desc": "你连老婆子洗澡都要看，臊不臊？",
+						"dir": 1
+					},
+					{
+						"groupId": 60101,
+						"pId": 44,
+						"role": 3,
+						"cId": "125",
+						"desc": "小道无意撞见，前辈何以血口喷人",
+						"dir": 2
+					},
+					{
+						"groupId": 60101,
+						"pId": 45,
+						"role": 2,
+						"cId": "170",
+						"desc": "你拿我衣服去嗅，也叫无意？",
+						"dir": 1
+					}
+				]
+			},
+			{
+				"groupId": 60102,
+				"id": 601,
+				"type": {
+					"fhit" : 125
+				},
+				"word": [
+					{
+						"groupId": 60102,
+						"pId": 46,
+						"role": 3,
+						"cId": "125",
+						"res": "map_6_101_1",
+						"desc": "你是谁，胆敢到重阳宫撒野？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 60103,
+				"id": 601,
+				"type": {
+					"hit" : 125
+				},
+				"word": [
+					{
+						"groupId": 60103,
+						"pId": 47,
+						"role": 3,
+						"cId": "125",
+						"desc": "你自取其祸，怨不得我！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"602": {
+		"id": 602,
+		"next": 0,
+		"name": "映朝林",
+		"groupId": 6,
+		"pk": 0,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"5" : 193
+		},
+		"tip": "完成主线193.道观藏珍八-突围可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"131" : 11
+		},
+		"bossId": "128",
+		"bossPosition": {
+			"128" : [
+	-250,
+	0
+],
+			"131" : [
+	250,
+	0
+]
+		},
+		"monsterId": "130,130,130,130,130",
+		"eliteMonster": 129,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 60201,
+				"id": 602,
+				"type": {
+					"normal" : [
+	128
+]
+				},
+				"word": [
+					{
+						"groupId": 60201,
+						"pId": 48,
+						"role": 3,
+						"cId": "128",
+						"desc": "这里最是幽静，没人来的…",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 60202,
+				"id": 602,
+				"type": {
+					"fhit" : 128
+				},
+				"word": [
+					{
+						"groupId": 60202,
+						"pId": 49,
+						"role": 3,
+						"cId": "128",
+						"res": "map_6_39_1",
+						"desc": "是谁？！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 60203,
+				"id": 602,
+				"type": {
+					"hit" : 128
+				},
+				"word": [
+					{
+						"groupId": 60203,
+						"pId": 50,
+						"role": 3,
+						"cId": "128",
+						"desc": "不许再看了，听见没有？",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"701": {
+		"id": 701,
+		"next": 702,
+		"name": "百花谷口",
+		"groupId": 7,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "133",
+		"bossPosition": {
+			"133" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "134,134,134,134,134",
+		"plot": [
+			{
+				"groupId": 70101,
+				"id": 701,
+				"type": {
+					"normal" : [
+	133
+]
+				},
+				"word": [
+					{
+						"groupId": 70101,
+						"pId": 51,
+						"role": 3,
+						"cId": "133",
+						"desc": "师父夸你医术神通，我偏生不服",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 70102,
+				"id": 701,
+				"type": {
+					"fhit" : 133
+				},
+				"word": [
+					{
+						"groupId": 70102,
+						"pId": 52,
+						"role": 3,
+						"cId": "133",
+						"desc": "打得好，将他余下的毛通通拔了！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 70103,
+				"id": 701,
+				"type": {
+					"hit" : 133
+				},
+				"word": [
+					{
+						"groupId": 70103,
+						"pId": 53,
+						"role": 3,
+						"cId": "133",
+						"desc": "你中了我的毒，及早预备后事去罢",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"dongfang": 0,
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"702": {
+		"id": 702,
+		"next": 0,
+		"name": "百花谷内",
+		"groupId": 7,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"10" : 30
+		},
+		"tip": "人物达到30级可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "132",
+		"bossPosition": {
+			"132" : [
+	0,
+	0
+]
+		},
+		"monsterId": "135,135,135,135,135",
+		"plot": [
+			{
+				"groupId": 70201,
+				"id": 702,
+				"type": {
+					"normal" : [
+	132
+]
+				},
+				"word": [
+					{
+						"groupId": 70201,
+						"pId": 54,
+						"role": 3,
+						"cId": "132",
+						"desc": "你个老毒妇蛇蝎心肠，丑若无盐",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 70202,
+				"id": 702,
+				"type": {
+					"fhit" : 132
+				},
+				"word": [
+					{
+						"groupId": 70202,
+						"pId": 55,
+						"role": 3,
+						"cId": "132",
+						"desc": "哈哈，师姊，想不到你也有今天！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 70203,
+				"id": 702,
+				"type": {
+					"hit" : 132
+				},
+				"word": [
+					{
+						"groupId": 70203,
+						"pId": 56,
+						"role": 3,
+						"cId": "132",
+						"desc": "好杂毛，倒非无能之辈！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"801": {
+		"id": 801,
+		"next": 802,
+		"name": "凤鸣涧",
+		"groupId": 8,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "136",
+		"bossPosition": {
+			"136" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "138,138,138,138,138",
+		"eliteMonster": 137,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 80101,
+				"id": 801,
+				"type": {
+					"normal" : [
+	136
+]
+				},
+				"word": [
+					{
+						"groupId": 80101,
+						"pId": 57,
+						"role": 3,
+						"cId": "136",
+						"desc": "有男人？青鸢楼怎会有男人？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 80102,
+				"id": 801,
+				"type": {
+					"fhit" : 136
+				},
+				"word": [
+					{
+						"groupId": 80102,
+						"pId": 58,
+						"role": 3,
+						"cId": "136",
+						"res": "map_8_172_1",
+						"desc": "我没见过男人，碰你一下怎么了？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 80103,
+				"id": 801,
+				"type": {
+					"hit" : 136
+				},
+				"word": [
+					{
+						"groupId": 80103,
+						"pId": 59,
+						"role": 3,
+						"cId": "136",
+						"desc": "青鸢楼，迟早为我所有",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"dongfang": 1,
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"802": {
+		"id": 802,
+		"next": 0,
+		"name": "竹清阁",
+		"groupId": 8,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"5" : 345
+		},
+		"tip": "完成主线237.深入龙潭二十二可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"npc": "15,20010",
+		"special": {
+			"142" : 13
+		},
+		"bossId": "139",
+		"bossPosition": {
+			"139" : [
+	-250,
+	0
+],
+			"142" : [
+	250,
+	0
+]
+		},
+		"monsterId": "141,141,141,141,141",
+		"eliteMonster": 140,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 80201,
+				"id": 802,
+				"type": {
+					"normal" : [
+	139
+]
+				},
+				"word": [
+					{
+						"groupId": 80201,
+						"pId": 60,
+						"role": 3,
+						"cId": "139",
+						"desc": "谁跟你姐姐妹妹的乱叫？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 80202,
+				"id": 802,
+				"type": {
+					"fhit" : 139
+				},
+				"word": [
+					{
+						"groupId": 80202,
+						"pId": 61,
+						"role": 3,
+						"cId": "139",
+						"res": "map_8_159_1",
+						"desc": "下作男人，竟喂我吃和合散…",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 80203,
+				"id": 802,
+				"type": {
+					"hit" : 139
+				},
+				"word": [
+					{
+						"groupId": 80203,
+						"pId": 62,
+						"role": 3,
+						"cId": "139",
+						"desc": "好热…抱我，快，抱住我…",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"901": {
+		"id": 901,
+		"next": 902,
+		"name": "卧龙禅院",
+		"groupId": 9,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "144",
+		"bossPosition": {
+			"144" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "146,146,146,146,146",
+		"eliteMonster": 145,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 90101,
+				"id": 901,
+				"type": {
+					"normal" : [
+	144
+]
+				},
+				"word": [
+					{
+						"groupId": 90101,
+						"pId": 63,
+						"role": 3,
+						"cId": "144",
+						"desc": "卧龙剑谱，我兄弟二人志在必得",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 90102,
+				"id": 901,
+				"type": {
+					"fhit" : 144
+				},
+				"word": [
+					{
+						"groupId": 90102,
+						"pId": 64,
+						"role": 3,
+						"cId": "144",
+						"res": "map_9_173_1",
+						"desc": "凭你也配来跟我动手？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 90103,
+				"id": 901,
+				"type": {
+					"hit" : 144
+				},
+				"word": [
+					{
+						"groupId": 90103,
+						"pId": 65,
+						"role": 3,
+						"cId": "144",
+						"desc": "想从我这过，那是一万个休想！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"dongfang": 2,
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"902": {
+		"id": 902,
+		"next": 0,
+		"name": "朝圣池",
+		"groupId": 9,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"8" : 101002
+		},
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"npcMonster": "249",
+		"bossId": "147",
+		"bossPosition": {
+			"147" : [
+	0,
+	0
+]
+		},
+		"monsterId": "149,149,149,149,149",
+		"eliteMonster": 148,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 90201,
+				"id": 902,
+				"type": {
+					"normal" : [
+	147
+]
+				},
+				"word": [
+					{
+						"groupId": 90201,
+						"pId": 66,
+						"role": 3,
+						"cId": "147",
+						"desc": "小僧远道而来，相烦借阅剑谱一观",
+						"dir": 2
+					},
+					{
+						"groupId": 90201,
+						"pId": 67,
+						"role": 2,
+						"cId": "249",
+						"desc": "剑谱是卧龙寺秘法，岂能说借就借",
+						"dir": 1
+					},
+					{
+						"groupId": 90201,
+						"pId": 68,
+						"role": 3,
+						"cId": "147",
+						"desc": "那小僧只好稍加逼迫了，得罪！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 90202,
+				"id": 902,
+				"type": {
+					"fhit" : 147
+				},
+				"word": [
+					{
+						"groupId": 90202,
+						"pId": 69,
+						"role": 3,
+						"cId": "147",
+						"res": "map_9_145_1",
+						"desc": "佛爷好意饶你性命，你偏执迷不悟！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 90203,
+				"id": 902,
+				"type": {
+					"hit" : 147
+				},
+				"word": [
+					{
+						"groupId": 90203,
+						"pId": 70,
+						"role": 3,
+						"cId": "147",
+						"desc": "卧龙寺居然伏得你这位青年高手！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"1001": {
+		"id": 1001,
+		"next": 1002,
+		"name": "瘴烟泽",
+		"groupId": 10,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "150",
+		"bossPosition": {
+			"150" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "152,152,152,152,152",
+		"eliteMonster": 151,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 100101,
+				"id": 1001,
+				"type": {
+					"normal" : [
+	150
+]
+				},
+				"word": [
+					{
+						"groupId": 100101,
+						"pId": 71,
+						"role": 3,
+						"cId": "150",
+						"desc": "哞，呱呱，哞呱",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 100102,
+				"id": 1001,
+				"type": {
+					"fhit" : 150
+				},
+				"word": [
+					{
+						"groupId": 100102,
+						"pId": 72,
+						"role": 3,
+						"cId": "150",
+						"res": "map_10_188_1",
+						"desc": "呱，呱呱哞！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 100103,
+				"id": 1001,
+				"type": {
+					"hit" : 150
+				},
+				"word": [
+					{
+						"groupId": 100103,
+						"pId": 73,
+						"role": 3,
+						"cId": "150",
+						"desc": "呱哞哞呱！哞哞呱呱！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"dongfang": 3,
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"1002": {
+		"id": 1002,
+		"next": 0,
+		"name": "玉镜湖",
+		"groupId": 10,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "153",
+		"bossPosition": {
+			"153" : [
+	0,
+	0
+]
+		},
+		"monsterId": "155,155,155,155,155",
+		"eliteMonster": 154,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 100201,
+				"id": 1002,
+				"type": {
+					"normal" : [
+	153
+]
+				},
+				"word": [
+					{
+						"groupId": 100201,
+						"pId": 74,
+						"role": 3,
+						"cId": "153",
+						"desc": "啊哟，我的内力鼓荡，不受控啦",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 100202,
+				"id": 1002,
+				"type": {
+					"fhit" : 153
+				},
+				"word": [
+					{
+						"groupId": 100202,
+						"pId": 75,
+						"role": 3,
+						"cId": "153",
+						"res": "map_10_146_1",
+						"desc": "我忍耐不住了，快将我打晕！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 100203,
+				"id": 1002,
+				"type": {
+					"hit" : 153
+				},
+				"word": [
+					{
+						"groupId": 100203,
+						"pId": 76,
+						"role": 3,
+						"cId": "153",
+						"desc": "用力啊，你没吃饭么？",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"1101": {
+		"id": 1101,
+		"next": 1102,
+		"name": "罗刹门外",
+		"groupId": 11,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "378",
+		"bossPosition": {
+			"378" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "377,377,377,377,377",
+		"eliteMonster": 376,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 110101,
+				"id": 1101,
+				"type": {
+					"normal" : [
+	378
+]
+				},
+				"word": [
+					{
+						"groupId": 110101,
+						"pId": 77,
+						"role": 3,
+						"cId": "379",
+						"desc": "最近帮主怎么怪怪的",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 110102,
+				"id": 1101,
+				"type": {
+					"fhit" : 153
+				},
+				"word": [
+					{
+						"groupId": 110102,
+						"pId": 78,
+						"role": 3,
+						"cId": "379",
+						"desc": "哪里来的小贼！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 110103,
+				"id": 1101,
+				"type": {
+					"hit" : 153
+				},
+				"word": [
+					{
+						"groupId": 110103,
+						"pId": 79,
+						"role": 3,
+						"cId": "379",
+						"desc": "哼！休想进入这扇门",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"1102": {
+		"id": 1102,
+		"next": 0,
+		"name": "罗刹殿",
+		"groupId": 11,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"5" : 177
+		},
+		"tip": "完成主线333.主线任务可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"253" : 15,
+			"254" : 15,
+			"255" : 15
+		},
+		"bossId": "156,157",
+		"bossPosition": {
+			"156" : [
+	0,
+	0
+],
+			"157" : [
+	0,
+	0
+],
+			"253" : [
+	-250,
+	0
+],
+			"254" : [
+	0,
+	0
+],
+			"255" : [
+	250,
+	0
+]
+		},
+		"monsterId": "159,159,159,159,159",
+		"eliteMonster": 158,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 110201,
+				"id": 1102,
+				"type": {
+					"normal" : [
+	156
+]
+				},
+				"word": [
+					{
+						"groupId": 110201,
+						"pId": 80,
+						"role": 3,
+						"cId": "156",
+						"desc": "何人盗我古墓兵书？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 110202,
+				"id": 1102,
+				"type": {
+					"fhit" : 156
+				},
+				"word": [
+					{
+						"groupId": 110202,
+						"pId": 81,
+						"role": 3,
+						"cId": "156",
+						"res": "map_11_166_1",
+						"desc": "父母养你不易，何苦枉送性命",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 110203,
+				"id": 1102,
+				"type": {
+					"hit" : 156
+				},
+				"word": [
+					{
+						"groupId": 110203,
+						"pId": 82,
+						"role": 3,
+						"cId": "156",
+						"desc": "胆敢欺侮我哥哥，容你不得！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 110204,
+				"id": 1102,
+				"type": {
+					"normal" : [
+	157
+]
+				},
+				"word": [
+					{
+						"groupId": 110204,
+						"pId": 83,
+						"role": 3,
+						"cId": "157",
+						"desc": "老夫内急出恭，谁说老夫想逃？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 110205,
+				"id": 1102,
+				"type": {
+					"fhit" : 157
+				},
+				"word": [
+					{
+						"groupId": 110205,
+						"pId": 84,
+						"role": 3,
+						"cId": "157",
+						"res": "map_11_165_1",
+						"desc": "吃老夫一掌…啊哟，轻点！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 110206,
+				"id": 1102,
+				"type": {
+					"hit" : 157
+				},
+				"word": [
+					{
+						"groupId": 110206,
+						"pId": 85,
+						"role": 3,
+						"cId": "157",
+						"desc": "我认降，我认降，我不是仇万刃！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"1201": {
+		"id": 1201,
+		"next": 1202,
+		"name": "醉花轩",
+		"groupId": 12,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "160",
+		"bossPosition": {
+			"160" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "162,162,162,162,162",
+		"eliteMonster": 161,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 120101,
+				"id": 1201,
+				"type": {
+					"normal" : [
+	160
+]
+				},
+				"word": [
+					{
+						"groupId": 120101,
+						"pId": 86,
+						"role": 3,
+						"cId": "160",
+						"desc": "阁主吩咐，外人一律不得入内",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 120102,
+				"id": 1201,
+				"type": {
+					"fhit" : 160
+				},
+				"word": [
+					{
+						"groupId": 120102,
+						"pId": 87,
+						"role": 3,
+						"cId": "160",
+						"res": "map_12_174_1",
+						"desc": "非我要拦你，上命所差，事不由己",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 120103,
+				"id": 1201,
+				"type": {
+					"hit" : 160
+				},
+				"word": [
+					{
+						"groupId": 120103,
+						"pId": 88,
+						"role": 3,
+						"cId": "160",
+						"desc": "你快赢我，好进去救二阁主性命",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"1202": {
+		"id": 1202,
+		"next": 0,
+		"name": "问星台",
+		"groupId": 12,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"166" : 11
+		},
+		"bossId": "163",
+		"bossPosition": {
+			"163" : [
+	-250,
+	0
+],
+			"166" : [
+	250,
+	0
+]
+		},
+		"monsterId": "165,165,165,165,165",
+		"eliteMonster": 164,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 120201,
+				"id": 1202,
+				"type": {
+					"normal" : [
+	163
+]
+				},
+				"word": [
+					{
+						"groupId": 120201,
+						"pId": 89,
+						"role": 3,
+						"cId": "163",
+						"desc": "妹妹，你现在才知错，岂非迟了？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 120202,
+				"id": 1202,
+				"type": {
+					"fhit" : 163
+				},
+				"word": [
+					{
+						"groupId": 120202,
+						"pId": 90,
+						"role": 3,
+						"cId": "163",
+						"res": "map_12_118_1",
+						"desc": "你若给我杀了，也是罪有应得",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 120203,
+				"id": 1202,
+				"type": {
+					"hit" : 163
+				},
+				"word": [
+					{
+						"groupId": 120203,
+						"pId": 91,
+						"role": 3,
+						"cId": "163",
+						"desc": "来了这么些人，结果没一个管用",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"1301": {
+		"id": 1301,
+		"next": 1302,
+		"name": "药王谷口",
+		"groupId": 13,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "379",
+		"bossPosition": {
+			"379" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "380,380,380,380,380",
+		"plot": [
+			{
+				"groupId": 130101,
+				"id": 1301,
+				"type": {
+					"normal" : [
+	379
+]
+				},
+				"word": [
+					{
+						"groupId": 130101,
+						"pId": 92,
+						"role": 3,
+						"cId": "379",
+						"desc": "师兄，不知你这次要怎么应对呢",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 130102,
+				"id": 1301,
+				"type": {
+					"fhit" : 379
+				},
+				"word": [
+					{
+						"groupId": 130102,
+						"pId": 93,
+						"role": 3,
+						"cId": "379",
+						"desc": "是谁？！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 130103,
+				"id": 1301,
+				"type": {
+					"hit" : 379
+				},
+				"word": [
+					{
+						"groupId": 130103,
+						"pId": 94,
+						"role": 3,
+						"cId": "379",
+						"desc": "小娃子，快快退去！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"1302": {
+		"id": 1302,
+		"next": 0,
+		"name": "药王谷内",
+		"groupId": 13,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"12" : 10
+		},
+		"tip": "击杀10只毒虫方可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"167" : 17,
+			"168" : 11,
+			"169" : 11,
+			"170" : 17,
+			"260" : 11,
+			"261" : 11
+		},
+		"bossId": "171",
+		"bossPosition": {
+			"167" : [
+	-160,
+	200
+],
+			"168" : [
+	-450,
+	0
+],
+			"169" : [
+	-450,
+	200
+],
+			"170" : [
+	160,
+	200
+],
+			"171" : [
+	0,
+	0
+],
+			"260" : [
+	450,
+	0
+],
+			"261" : [
+	450,
+	200
+]
+		},
+		"plot": [
+			{
+				"groupId": 130201,
+				"id": 1302,
+				"type": {
+					"normal" : [
+	171
+]
+				},
+				"word": [
+					{
+						"groupId": 130201,
+						"pId": 95,
+						"role": 3,
+						"cId": "171",
+						"desc": "嗔怒皆消，方可成佛",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 130202,
+				"id": 1302,
+				"type": {
+					"fhit" : 171
+				},
+				"word": [
+					{
+						"groupId": 130202,
+						"pId": 96,
+						"role": 3,
+						"cId": "171",
+						"desc": "施主忒煞无礼！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 130203,
+				"id": 1302,
+				"type": {
+					"hit" : 171
+				},
+				"word": [
+					{
+						"groupId": 130203,
+						"pId": 97,
+						"role": 3,
+						"cId": "171",
+						"desc": "贫僧送你归西！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"1401": {
+		"id": 1401,
+		"next": 1402,
+		"name": "湛卢索道",
+		"groupId": 14,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "172",
+		"bossPosition": {
+			"172" : [
+	0,
+	0
+]
+		},
+		"monsterId": "174,174,174,174,174",
+		"eliteMonster": 173,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 140101,
+				"id": 1401,
+				"type": {
+					"normal" : [
+	172
+]
+				},
+				"word": [
+					{
+						"groupId": 140101,
+						"pId": 98,
+						"role": 3,
+						"cId": "172",
+						"desc": "你说来便来，说去便去，教我脸往哪里放",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 140102,
+				"id": 1401,
+				"type": {
+					"fhit" : 172
+				},
+				"word": [
+					{
+						"groupId": 140102,
+						"pId": 99,
+						"role": 3,
+						"cId": "172",
+						"desc": "你想我呼痛呻吟，我偏是哼也不哼一声",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 140103,
+				"id": 1401,
+				"type": {
+					"hit" : 172
+				},
+				"word": [
+					{
+						"groupId": 140103,
+						"pId": 100,
+						"role": 3,
+						"cId": "172",
+						"desc": "你小子的武功如此怪异，留着大是祸胎！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"1402": {
+		"id": 1402,
+		"next": 0,
+		"name": "锁剑台",
+		"groupId": 14,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"178" : 11
+		},
+		"bossId": "175",
+		"bossPosition": {
+			"175" : [
+	-250,
+	0
+],
+			"178" : [
+	250,
+	0
+]
+		},
+		"monsterId": "177,177,177,177,177",
+		"eliteMonster": 176,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 140201,
+				"id": 1402,
+				"type": {
+					"normal" : [
+	175
+]
+				},
+				"word": [
+					{
+						"groupId": 140201,
+						"pId": 101,
+						"role": 3,
+						"cId": "175",
+						"desc": "你定要跟我作对到底，是也不是？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 140202,
+				"id": 1402,
+				"type": {
+					"fhit" : 175
+				},
+				"word": [
+					{
+						"groupId": 140202,
+						"pId": 102,
+						"role": 3,
+						"cId": "175",
+						"desc": "是非曲直，先打过后再论",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 140203,
+				"id": 1402,
+				"type": {
+					"hit" : 175
+				},
+				"word": [
+					{
+						"groupId": 140203,
+						"pId": 103,
+						"role": 3,
+						"cId": "175",
+						"desc": "贵派居然有你这等人才，你师父了不起啊",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"1501": {
+		"id": 1501,
+		"next": 1502,
+		"name": "唐家外院",
+		"groupId": 15,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "179",
+		"bossPosition": {
+			"179" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "181,181,181,181,181",
+		"eliteMonster": 180,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 150101,
+				"id": 1501,
+				"type": {
+					"normal" : [
+	179
+]
+				},
+				"word": [
+					{
+						"groupId": 150101,
+						"pId": 104,
+						"role": 3,
+						"cId": "179",
+						"desc": "但取唐家一门性命，余人快快离去",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 150102,
+				"id": 1501,
+				"type": {
+					"fhit" : 179
+				},
+				"word": [
+					{
+						"groupId": 150102,
+						"pId": 105,
+						"role": 3,
+						"cId": "179",
+						"desc": "破铜烂铁，也拿来吓人么？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 150103,
+				"id": 1501,
+				"type": {
+					"hit" : 179
+				},
+				"word": [
+					{
+						"groupId": 150103,
+						"pId": 106,
+						"role": 3,
+						"cId": "179",
+						"desc": "我奉师命来灭唐家满门，跟你有何干系",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"1502": {
+		"id": 1502,
+		"next": 0,
+		"name": "唐家内院",
+		"groupId": 15,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"185" : 11,
+			"186" : 11
+		},
+		"bossId": "182",
+		"bossPosition": {
+			"182" : [
+	0,
+	0
+],
+			"185" : [
+	300,
+	0
+],
+			"186" : [
+	-300,
+	0
+]
+		},
+		"monsterId": "184,184,184,184,184",
+		"eliteMonster": 183,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 150201,
+				"id": 1502,
+				"type": {
+					"normal" : [
+	182
+]
+				},
+				"word": [
+					{
+						"groupId": 150201,
+						"pId": 107,
+						"role": 3,
+						"cId": "182",
+						"desc": "只怪唐家上下太短命，怨不得我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 150202,
+				"id": 1502,
+				"type": {
+					"fhit" : 182
+				},
+				"word": [
+					{
+						"groupId": 150202,
+						"pId": 108,
+						"role": 3,
+						"cId": "182",
+						"desc": "我的剑一旦出匣，不饮人血便不还鞘",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 150203,
+				"id": 1502,
+				"type": {
+					"hit" : 182
+				},
+				"word": [
+					{
+						"groupId": 150203,
+						"pId": 109,
+						"role": 3,
+						"cId": "182",
+						"desc": "你今天得送命在这儿了，可后悔么？",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"1601": {
+		"id": 1601,
+		"next": 1602,
+		"name": "归云山道",
+		"groupId": 16,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "187",
+		"bossPosition": {
+			"187" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "189,189,189,189,189",
+		"eliteMonster": 188,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 160101,
+				"id": 1601,
+				"type": {
+					"normal" : [
+	187
+]
+				},
+				"word": [
+					{
+						"groupId": 160101,
+						"pId": 110,
+						"role": 3,
+						"cId": "187",
+						"desc": "小爷生在天地间，不怕朝廷不怕官",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 160102,
+				"id": 1601,
+				"type": {
+					"fhit" : 187
+				},
+				"word": [
+					{
+						"groupId": 160102,
+						"pId": 111,
+						"role": 3,
+						"cId": "187",
+						"desc": "与你动手，不必讲什么仁义道德",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 160103,
+				"id": 1601,
+				"type": {
+					"hit" : 187
+				},
+				"word": [
+					{
+						"groupId": 160103,
+						"pId": 112,
+						"role": 3,
+						"cId": "187",
+						"desc": "兀那泼贼哪里去？",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"1602": {
+		"id": 1602,
+		"next": 0,
+		"name": "归云寨",
+		"groupId": 16,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"1" : 190
+		},
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "190",
+		"bossPosition": {
+			"190" : [
+	0,
+	0
+]
+		},
+		"monsterId": "192,192,192,192,192",
+		"eliteMonster": 191,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 160201,
+				"id": 1602,
+				"type": {
+					"normal" : [
+	190
+]
+				},
+				"word": [
+					{
+						"groupId": 160201,
+						"pId": 113,
+						"role": 3,
+						"cId": "190",
+						"desc": "山高必有怪，冷峻却生精",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 160202,
+				"id": 1602,
+				"type": {
+					"fhit" : 190
+				},
+				"word": [
+					{
+						"groupId": 160202,
+						"pId": 114,
+						"role": 3,
+						"cId": "190",
+						"desc": "何方鼠辈，敢闯寨来，又伤我爱子？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 160203,
+				"id": 1602,
+				"type": {
+					"hit" : 190
+				},
+				"word": [
+					{
+						"groupId": 160203,
+						"pId": 115,
+						"role": 3,
+						"cId": "190",
+						"desc": "这些不义之财，不取有违天道",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"1701": {
+		"id": 1701,
+		"next": 702,
+		"name": "郭府外",
+		"groupId": 17,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"npc": "20013",
+		"bossId": "381",
+		"bossPosition": {
+			"381" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "383,383,383,383,383",
+		"eliteMonster": 382,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 170101,
+				"id": 1701,
+				"type": {
+					"normal" : [
+	381
+]
+				},
+				"word": [
+					{
+						"groupId": 170101,
+						"pId": 116,
+						"role": 3,
+						"cId": "381",
+						"desc": "不知我那逆徒可曾来了？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 170102,
+				"id": 1701,
+				"type": {
+					"fhit" : 381
+				},
+				"word": [
+					{
+						"groupId": 170102,
+						"pId": 117,
+						"role": 3,
+						"cId": "381",
+						"desc": "那就来比试几招吧",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 170103,
+				"id": 1701,
+				"type": {
+					"hit" : 381
+				},
+				"word": [
+					{
+						"groupId": 170103,
+						"pId": 118,
+						"role": 3,
+						"cId": "381",
+						"desc": "你们中原人士就知道以多欺少！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"1702": {
+		"id": 1702,
+		"next": 0,
+		"name": "郭府内",
+		"groupId": 17,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"npc": "20006",
+		"special": {
+			"256" : 13,
+			"257" : 13,
+			"258" : 13,
+			"259" : 13
+		},
+		"bossId": "193",
+		"bossPosition": {
+			"193" : [
+	0,
+	0
+],
+			"256" : [
+	-408,
+	0
+],
+			"257" : [
+	-136,
+	0
+],
+			"258" : [
+	136,
+	0
+],
+			"259" : [
+	408,
+	0
+]
+		},
+		"monsterId": "196,196,196,196,196",
+		"eliteMonster": 195,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 170201,
+				"id": 1702,
+				"type": {
+					"normal" : [
+	193
+]
+				},
+				"word": [
+					{
+						"groupId": 170201,
+						"pId": 119,
+						"role": 3,
+						"cId": "193",
+						"desc": "好眼力，这都教你识破了",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 170202,
+				"id": 1702,
+				"type": {
+					"fhit" : 193
+				},
+				"word": [
+					{
+						"groupId": 170202,
+						"pId": 120,
+						"role": 3,
+						"cId": "193",
+						"desc": "你是中原武林后辈，此间容不到你来说话",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 170203,
+				"id": 1702,
+				"type": {
+					"hit" : 193
+				},
+				"word": [
+					{
+						"groupId": 170203,
+						"pId": 121,
+						"role": 3,
+						"cId": "193",
+						"desc": "小王劝请你们投效蒙古，你们偏固执不听",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"1801": {
+		"id": 1801,
+		"next": 1802,
+		"name": "朝天峡",
+		"groupId": 18,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"200" : 11
+		},
+		"bossId": "197",
+		"bossPosition": {
+			"197" : [
+	250,
+	0
+],
+			"200" : [
+	-250,
+	0
+]
+		},
+		"monsterId": "199,199,199,199,199",
+		"eliteMonster": 198,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 180101,
+				"id": 1801,
+				"type": {
+					"normal" : [
+	197
+]
+				},
+				"word": [
+					{
+						"groupId": 180101,
+						"pId": 122,
+						"role": 3,
+						"cId": "197",
+						"desc": "我要大闹这不孝子的喜宴，教他颜面扫地",
+						"dir": 1
+					}
+				]
+			},
+			{
+				"groupId": 180102,
+				"id": 1801,
+				"type": {
+					"fhit" : 197
+				},
+				"word": [
+					{
+						"groupId": 180102,
+						"pId": 123,
+						"role": 3,
+						"cId": "197",
+						"desc": "你十八代祖宗不积德，让你碰上了我",
+						"dir": 1
+					}
+				]
+			},
+			{
+				"groupId": 180103,
+				"id": 1801,
+				"type": {
+					"hit" : 197
+				},
+				"word": [
+					{
+						"groupId": 180103,
+						"pId": 124,
+						"role": 3,
+						"cId": "197",
+						"desc": "你忙不迭地来送命，怪不得我啊",
+						"dir": 1
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"1802": {
+		"id": 1802,
+		"next": 0,
+		"name": "离忧阁",
+		"groupId": 18,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"204" : 11,
+			"205" : 11
+		},
+		"bossId": "201",
+		"bossPosition": {
+			"201" : [
+	0,
+	0
+],
+			"204" : [
+	-300,
+	0
+],
+			"205" : [
+	300,
+	0
+]
+		},
+		"monsterId": "203,203,203,203,203",
+		"eliteMonster": 202,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 180201,
+				"id": 1802,
+				"type": {
+					"normal" : [
+	201
+]
+				},
+				"word": [
+					{
+						"groupId": 180201,
+						"pId": 125,
+						"role": 3,
+						"cId": "201",
+						"desc": "今日是我大喜之期，诸位光降，幸何如之",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 180202,
+				"id": 1802,
+				"type": {
+					"fhit" : 201
+				},
+				"word": [
+					{
+						"groupId": 180202,
+						"pId": 126,
+						"role": 3,
+						"cId": "201",
+						"desc": "我敬你是客，以礼相待，如何恁地胡说？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 180203,
+				"id": 1802,
+				"type": {
+					"hit" : 201
+				},
+				"word": [
+					{
+						"groupId": 180203,
+						"pId": 127,
+						"role": 3,
+						"cId": "201",
+						"desc": "好，好，今日咱们一齐同归于尽！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"1901": {
+		"id": 1901,
+		"next": 1902,
+		"name": "万竹林外",
+		"groupId": 19,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "384",
+		"bossPosition": {
+			"384" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "385,385,385,385,385",
+		"plot": [
+			{
+				"groupId": 190101,
+				"id": 1901,
+				"type": {
+					"normal" : [
+	384
+]
+				},
+				"word": [
+					{
+						"groupId": 190101,
+						"pId": 128,
+						"role": 3,
+						"cId": "384",
+						"desc": "我那师弟本就不是什么清心寡欲的人",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 190102,
+				"id": 1901,
+				"type": {
+					"fhit" : 384
+				},
+				"word": [
+					{
+						"groupId": 190102,
+						"pId": 129,
+						"role": 3,
+						"cId": "384",
+						"desc": "何人在此放肆！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 190103,
+				"id": 1901,
+				"type": {
+					"hit" : 384
+				},
+				"word": [
+					{
+						"groupId": 190103,
+						"pId": 130,
+						"role": 3,
+						"cId": "384",
+						"desc": "你们再不住手就别怪我了",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"1902": {
+		"id": 1902,
+		"next": 0,
+		"name": "万竹林内",
+		"groupId": 19,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"5" : 177
+		},
+		"tip": "完成主线333.主线任务可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"262" : 11,
+			"263" : 11
+		},
+		"bossId": "206",
+		"bossPosition": {
+			"206" : [
+	0,
+	0
+],
+			"262" : [
+	300,
+	0
+],
+			"263" : [
+	-300,
+	0
+]
+		},
+		"monsterId": "207,208,209,210,211",
+		"plot": [
+			{
+				"groupId": 190201,
+				"id": 1902,
+				"type": {
+					"normal" : [
+	206
+]
+				},
+				"word": [
+					{
+						"groupId": 190201,
+						"pId": 131,
+						"role": 3,
+						"cId": "206",
+						"desc": "尹师侄受奸人陷害，在江湖上已清誉全无",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 190202,
+				"id": 1902,
+				"type": {
+					"fhit" : 206
+				},
+				"word": [
+					{
+						"groupId": 190202,
+						"pId": 132,
+						"role": 3,
+						"cId": "206",
+						"desc": "贫道查你行踪已久，今日决计放你不过！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 190203,
+				"id": 1902,
+				"type": {
+					"hit" : 206
+				},
+				"word": [
+					{
+						"groupId": 190203,
+						"pId": 133,
+						"role": 3,
+						"cId": "206",
+						"desc": "你自己做的歹事，居然推到尹师侄头上？",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"2001": {
+		"id": 2001,
+		"next": 2002,
+		"name": "皇宫内廷",
+		"groupId": 20,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "213",
+		"bossPosition": {
+			"213" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "387,387,387,387,387",
+		"eliteMonster": 386,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 200101,
+				"id": 2001,
+				"type": {
+					"normal" : [
+	213
+]
+				},
+				"word": [
+					{
+						"groupId": 200101,
+						"pId": 134,
+						"role": 3,
+						"cId": "213",
+						"desc": "她错认我是梦中情郎，索性假装到底…",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 200102,
+				"id": 2001,
+				"type": {
+					"fhit" : 213
+				},
+				"word": [
+					{
+						"groupId": 200102,
+						"pId": 135,
+						"role": 3,
+						"cId": "213",
+						"desc": "公主已选定我做驸马，还不快滚？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 200103,
+				"id": 2001,
+				"type": {
+					"hit" : 213
+				},
+				"word": [
+					{
+						"groupId": 200103,
+						"pId": 136,
+						"role": 3,
+						"cId": "213",
+						"desc": "你们这些粗野陋夫，也妄想吃天鹅肉？",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"2002": {
+		"id": 2002,
+		"next": 0,
+		"name": "西夏冰窖",
+		"groupId": 20,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"10" : 95
+		},
+		"tip": "人物达到95级可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"npc": "20008",
+		"bossId": "212",
+		"bossPosition": {
+			"212" : [
+	0,
+	0
+]
+		},
+		"monsterId": "215,215,215,215,215",
+		"eliteMonster": 214,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 200201,
+				"id": 2002,
+				"type": {
+					"normal" : [
+	212
+]
+				},
+				"word": [
+					{
+						"groupId": 200201,
+						"pId": 137,
+						"role": 3,
+						"cId": "212",
+						"desc": "我普散榜文招亲，只为邀梦中情郎前来",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 200202,
+				"id": 2002,
+				"type": {
+					"fhit" : 212
+				},
+				"word": [
+					{
+						"groupId": 200202,
+						"pId": 138,
+						"role": 3,
+						"cId": "212",
+						"desc": "他是我梦中情郎，怎容你们随口折辱？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 200203,
+				"id": 2002,
+				"type": {
+					"hit" : 212
+				},
+				"word": [
+					{
+						"groupId": 200203,
+						"pId": 139,
+						"role": 3,
+						"cId": "212",
+						"desc": "快向王子道歉，否则我决不轻饶！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"2101": {
+		"id": 2101,
+		"next": 2102,
+		"name": "昆仑山口",
+		"groupId": 21,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "216",
+		"bossPosition": {
+			"216" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "218,218,218,218,218",
+		"eliteMonster": 217,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 210101,
+				"id": 2101,
+				"type": {
+					"normal" : [
+	216
+]
+				},
+				"word": [
+					{
+						"groupId": 210101,
+						"pId": 140,
+						"role": 3,
+						"cId": "216",
+						"desc": "我受尽童丫头的凌辱荼毒，实无生人乐趣",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 210102,
+				"id": 2101,
+				"type": {
+					"fhit" : 216
+				},
+				"word": [
+					{
+						"groupId": 210102,
+						"pId": 141,
+						"role": 3,
+						"cId": "216",
+						"desc": "你揭破了我的大计，就别想走啦！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 210103,
+				"id": 2101,
+				"type": {
+					"hit" : 216
+				},
+				"word": [
+					{
+						"groupId": 210103,
+						"pId": 142,
+						"role": 3,
+						"cId": "216",
+						"desc": "我还以为你有真才实学，原来是浪得虚名",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"2102": {
+		"id": 2102,
+		"next": 0,
+		"name": "昆仑宫",
+		"groupId": 21,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"1" : 216,
+			"8" : 101004
+		},
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "219",
+		"bossPosition": {
+			"219" : [
+	0,
+	0
+]
+		},
+		"monsterId": "221,221,221,221,221",
+		"eliteMonster": 220,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 210201,
+				"id": 2102,
+				"type": {
+					"normal" : [
+	219
+]
+				},
+				"word": [
+					{
+						"groupId": 210201,
+						"pId": 143,
+						"role": 3,
+						"cId": "219",
+						"desc": "见了长辈也不行礼，这般没规矩",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 210202,
+				"id": 2102,
+				"type": {
+					"fhit" : 219
+				},
+				"word": [
+					{
+						"groupId": 210202,
+						"pId": 144,
+						"role": 3,
+						"cId": "219",
+						"desc": "你们这些妖魔小丑，真当我放在眼里了？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 210203,
+				"id": 2102,
+				"type": {
+					"hit" : 219
+				},
+				"word": [
+					{
+						"groupId": 210203,
+						"pId": 145,
+						"role": 3,
+						"cId": "219",
+						"desc": "你做事不自量力，当然得吃尽苦头",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"2201": {
+		"id": 2201,
+		"next": 2202,
+		"name": "朱武堡外",
+		"groupId": 22,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "226",
+		"bossPosition": {
+			"226" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "389,389,389,389,389",
+		"eliteMonster": 388,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 220101,
+				"id": 2201,
+				"type": {
+					"normal" : [
+	226
+]
+				},
+				"word": [
+					{
+						"groupId": 220101,
+						"pId": 146,
+						"role": 3,
+						"cId": "226",
+						"desc": "咱们走这一步棋，实属情非得已",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 220102,
+				"id": 2201,
+				"type": {
+					"fhit" : 226
+				},
+				"word": [
+					{
+						"groupId": 220102,
+						"pId": 147,
+						"role": 3,
+						"cId": "226",
+						"desc": "阁下既要伸手较量，就请下场",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 220103,
+				"id": 2201,
+				"type": {
+					"hit" : 226
+				},
+				"word": [
+					{
+						"groupId": 220103,
+						"pId": 148,
+						"role": 3,
+						"cId": "226",
+						"desc": "诸位快住手，都是误会",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"2202": {
+		"id": 2202,
+		"next": 0,
+		"name": "朱武堡内",
+		"groupId": 22,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"12" : 10
+		},
+		"tip": "击杀10个朱武仆从方可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"229" : 15,
+			"264" : 15,
+			"265" : 15,
+			"266" : 15,
+			"267" : 15,
+			"268" : 15,
+			"269" : 15
+		},
+		"bossId": "225",
+		"bossPosition": {
+			"225" : [
+	-250,
+	0
+],
+			"229" : [
+	300,
+	0
+],
+			"264" : [
+	0,
+	0
+],
+			"265" : [
+	0,
+	0
+],
+			"266" : [
+	0,
+	0
+],
+			"267" : [
+	0,
+	0
+],
+			"268" : [
+	0,
+	0
+],
+			"269" : [
+	0,
+	0
+]
+		},
+		"monsterId": "228,228,228,228,228",
+		"eliteMonster": 227,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 220201,
+				"id": 2202,
+				"type": {
+					"normal" : [
+	225
+]
+				},
+				"word": [
+					{
+						"groupId": 220201,
+						"pId": 149,
+						"role": 3,
+						"cId": "225",
+						"desc": "陪这小鬼演戏，当真累坏我了",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 220202,
+				"id": 2202,
+				"type": {
+					"fhit" : 225
+				},
+				"word": [
+					{
+						"groupId": 220202,
+						"pId": 150,
+						"role": 3,
+						"cId": "225",
+						"desc": "我送你下地狱，说不定你反而快乐些",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 220203,
+				"id": 2202,
+				"type": {
+					"hit" : 225
+				},
+				"word": [
+					{
+						"groupId": 220203,
+						"pId": 151,
+						"role": 3,
+						"cId": "225",
+						"desc": "哪来这么些好手？",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"2301": {
+		"id": 2301,
+		"next": 2302,
+		"name": "驼岭庄院",
+		"groupId": 23,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"special": {
+			"233" : 11
+		},
+		"bossId": "230",
+		"bossPosition": {
+			"230" : [
+	0,
+	0
+],
+			"233" : [
+	0,
+	0
+]
+		},
+		"monsterId": "232,232,232,232,232",
+		"eliteMonster": 231,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 230101,
+				"id": 2301,
+				"type": {
+					"normal" : [
+	230
+]
+				},
+				"word": [
+					{
+						"groupId": 230101,
+						"pId": 152,
+						"role": 3,
+						"cId": "230",
+						"desc": "待她替爹爹翻译完经文，我便与她成亲",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 230102,
+				"id": 2301,
+				"type": {
+					"fhit" : 230
+				},
+				"word": [
+					{
+						"groupId": 230102,
+						"pId": 153,
+						"role": 3,
+						"cId": "230",
+						"desc": "你要抱打不平，一并上来赐教便是",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 230103,
+				"id": 2301,
+				"type": {
+					"hit" : 230
+				},
+				"word": [
+					{
+						"groupId": 230103,
+						"pId": 154,
+						"role": 3,
+						"cId": "230",
+						"desc": "今日你纵不丧命，也得叫你落个残废",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"2302": {
+		"id": 2302,
+		"next": 0,
+		"name": "驼岭密室",
+		"groupId": 23,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"1" : 230
+		},
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"npc": "20009",
+		"special": {
+			"237" : 11
+		},
+		"bossId": "234",
+		"bossPosition": {
+			"234" : [
+	0,
+	0
+],
+			"237" : [
+	300,
+	0
+],
+			"270" : [
+	-300,
+	0
+]
+		},
+		"monsterId": "236,236,236,236,236",
+		"eliteMonster": 235,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 230201,
+				"id": 2302,
+				"type": {
+					"normal" : [
+	234
+]
+				},
+				"word": [
+					{
+						"groupId": 230201,
+						"pId": 155,
+						"role": 3,
+						"cId": "234",
+						"desc": "欧阳庄主是谁？谁是欧阳庄主？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 230202,
+				"id": 2302,
+				"type": {
+					"fhit" : 234
+				},
+				"word": [
+					{
+						"groupId": 230202,
+						"pId": 156,
+						"role": 3,
+						"cId": "234",
+						"desc": "你也要来抢我经文？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 230203,
+				"id": 2302,
+				"type": {
+					"hit" : 234
+				},
+				"word": [
+					{
+						"groupId": 230203,
+						"pId": 157,
+						"role": 3,
+						"cId": "234",
+						"desc": "我才是天下第一！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"2401": {
+		"id": 2401,
+		"next": 2402,
+		"name": "桃花林",
+		"groupId": 24,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "238",
+		"bossPosition": {
+			"238" : [
+	-250,
+	0
+],
+			"241" : [
+	250,
+	0
+],
+			"242" : [
+	250,
+	0
+],
+			"243" : [
+	250,
+	0
+],
+			"244" : [
+	250,
+	0
+],
+			"245" : [
+	250,
+	0
+]
+		},
+		"monsterId": "240,240,240,240,240",
+		"eliteMonster": 239,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 240101,
+				"id": 2401,
+				"type": {
+					"normal" : [
+	238
+]
+				},
+				"word": [
+					{
+						"groupId": 240101,
+						"pId": 158,
+						"role": 3,
+						"cId": "238",
+						"desc": "你不给我经文，我就到处大小便",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 240102,
+				"id": 2401,
+				"type": {
+					"fhit" : 238
+				},
+				"word": [
+					{
+						"groupId": 240102,
+						"pId": 159,
+						"role": 3,
+						"cId": "238",
+						"desc": "姓黄的，你当你易容我就认不出了？",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 240103,
+				"id": 2401,
+				"type": {
+					"hit" : 238
+				},
+				"word": [
+					{
+						"groupId": 240103,
+						"pId": 160,
+						"role": 3,
+						"cId": "238",
+						"desc": "难听，难听，这曲子难听得紧！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"2402": {
+		"id": 2402,
+		"next": 0,
+		"name": "积翠亭",
+		"groupId": 24,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 30,
+		"bossId": "246",
+		"bossPosition": {
+			"246" : [
+	0,
+	0
+]
+		},
+		"monsterId": "248,248,248,248,248",
+		"eliteMonster": 247,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 240201,
+				"id": 2402,
+				"type": {
+					"normal" : [
+	246
+]
+				},
+				"word": [
+					{
+						"groupId": 240201,
+						"pId": 161,
+						"role": 3,
+						"cId": "246",
+						"desc": "小畜生，适才居然坏我大事！",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 240202,
+				"id": 2402,
+				"type": {
+					"fhit" : 246
+				},
+				"word": [
+					{
+						"groupId": 240202,
+						"pId": 162,
+						"role": 3,
+						"cId": "246",
+						"desc": "我倒要瞧瞧你有多大的道行",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 240203,
+				"id": 2402,
+				"type": {
+					"hit" : 246
+				},
+				"word": [
+					{
+						"groupId": 240203,
+						"pId": 163,
+						"role": 3,
+						"cId": "246",
+						"desc": "你不敢听我箫声，乃是有自知之明",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"2501": {
+		"id": 2501,
+		"next": 2502,
+		"name": "秦川谷口",
+		"groupId": 25,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "271",
+		"bossPosition": {
+			"271" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "273,273,273,273,273",
+		"plot": [
+			{
+				"groupId": 250101,
+				"id": 2501,
+				"type": {
+					"normal" : [
+	271
+]
+				},
+				"word": [
+					{
+						"groupId": 250101,
+						"pId": 164,
+						"role": 3,
+						"cId": "271",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 250102,
+				"id": 2501,
+				"type": {
+					"fhit" : 271
+				},
+				"word": [
+					{
+						"groupId": 250102,
+						"pId": 165,
+						"role": 3,
+						"cId": "271",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 250103,
+				"id": 2501,
+				"type": {
+					"hit" : 271
+				},
+				"word": [
+					{
+						"groupId": 250103,
+						"pId": 166,
+						"role": 3,
+						"cId": "271",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"2502": {
+		"id": 2502,
+		"next": 0,
+		"name": "秦川谷内",
+		"groupId": 25,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"5" : 177
+		},
+		"tip": "完成主线xxx方可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"npc": "20011",
+		"special": {
+			"277" : 13
+		},
+		"bossId": "272",
+		"bossPosition": {
+			"272" : [
+	-250,
+	0
+],
+			"277" : [
+	250,
+	0
+]
+		},
+		"monsterId": "275,275,275,275,275",
+		"plot": [
+			{
+				"groupId": 250201,
+				"id": 2502,
+				"type": {
+					"normal" : [
+	272
+]
+				},
+				"word": [
+					{
+						"groupId": 250201,
+						"pId": 167,
+						"role": 3,
+						"cId": "272",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 250202,
+				"id": 2502,
+				"type": {
+					"fhit" : 272
+				},
+				"word": [
+					{
+						"groupId": 250202,
+						"pId": 168,
+						"role": 3,
+						"cId": "272",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 250203,
+				"id": 2502,
+				"type": {
+					"hit" : 272
+				},
+				"word": [
+					{
+						"groupId": 250203,
+						"pId": 169,
+						"role": 3,
+						"cId": "272",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"2601": {
+		"id": 2601,
+		"next": 2602,
+		"name": "楼船甲板",
+		"groupId": 26,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"280" : 21
+		},
+		"bossId": "278",
+		"bossPosition": {
+			"278" : [
+	0,
+	0
+],
+			"280" : [
+	-250,
+	0
+]
+		},
+		"monsterId": "282,282,282,282,282",
+		"eliteMonster": 283,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 260101,
+				"id": 2601,
+				"type": {
+					"normal" : [
+	278
+]
+				},
+				"word": [
+					{
+						"groupId": 260101,
+						"pId": 170,
+						"role": 3,
+						"cId": "278",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 260102,
+				"id": 2601,
+				"type": {
+					"fhit" : 278
+				},
+				"word": [
+					{
+						"groupId": 260102,
+						"pId": 171,
+						"role": 3,
+						"cId": "278",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 260103,
+				"id": 2601,
+				"type": {
+					"hit" : 278
+				},
+				"word": [
+					{
+						"groupId": 260103,
+						"pId": 172,
+						"role": 3,
+						"cId": "278",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"2602": {
+		"id": 2602,
+		"next": 0,
+		"name": "船舱",
+		"groupId": 26,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"12" : 1
+		},
+		"tip": "击杀一次小敏儿方可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "279",
+		"bossPosition": {
+			"279" : [
+	0,
+	0
+]
+		},
+		"monsterId": "284,284,284,284,284",
+		"eliteMonster": 285,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 260201,
+				"id": 2602,
+				"type": {
+					"normal" : [
+	279
+]
+				},
+				"word": [
+					{
+						"groupId": 260201,
+						"pId": 173,
+						"role": 3,
+						"cId": "279",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 260202,
+				"id": 2602,
+				"type": {
+					"fhit" : 279
+				},
+				"word": [
+					{
+						"groupId": 260202,
+						"pId": 174,
+						"role": 3,
+						"cId": "279",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 260203,
+				"id": 2602,
+				"type": {
+					"hit" : 279
+				},
+				"word": [
+					{
+						"groupId": 260203,
+						"pId": 175,
+						"role": 3,
+						"cId": "279",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"2701": {
+		"id": 2701,
+		"next": 2702,
+		"name": "将军胡同",
+		"groupId": 27,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"npcMonster": "288",
+		"bossId": "287",
+		"bossPosition": {
+			"287" : [
+	0,
+	0
+]
+		},
+		"monsterId": "291,291,291,291,291",
+		"eliteMonster": 292,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 270101,
+				"id": 2701,
+				"type": {
+					"normal" : [
+	287
+]
+				},
+				"word": [
+					{
+						"groupId": 270101,
+						"pId": 176,
+						"role": 3,
+						"cId": "287",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 270102,
+				"id": 2701,
+				"type": {
+					"fhit" : 287
+				},
+				"word": [
+					{
+						"groupId": 270102,
+						"pId": 177,
+						"role": 3,
+						"cId": "287",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 270103,
+				"id": 2701,
+				"type": {
+					"hit" : 287
+				},
+				"word": [
+					{
+						"groupId": 270103,
+						"pId": 178,
+						"role": 3,
+						"cId": "287",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"2702": {
+		"id": 2702,
+		"next": 0,
+		"name": "废墟矮屋",
+		"groupId": 27,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "290",
+		"bossPosition": {
+			"289" : [
+	0,
+	0
+],
+			"290" : [
+	0,
+	0
+]
+		},
+		"monsterId": "293,293,293,293,293",
+		"eliteMonster": 294,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 270201,
+				"id": 2702,
+				"type": {
+					"normal" : [
+	290
+]
+				},
+				"word": [
+					{
+						"groupId": 270201,
+						"pId": 179,
+						"role": 3,
+						"cId": "290",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 270202,
+				"id": 2702,
+				"type": {
+					"fhit" : 290
+				},
+				"word": [
+					{
+						"groupId": 270202,
+						"pId": 180,
+						"role": 3,
+						"cId": "290",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 270203,
+				"id": 2702,
+				"type": {
+					"hit" : 290
+				},
+				"word": [
+					{
+						"groupId": 270203,
+						"pId": 181,
+						"role": 3,
+						"cId": "290",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"2801": {
+		"id": 2801,
+		"next": 2802,
+		"name": "罗城城门",
+		"groupId": 28,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "295",
+		"bossPosition": {
+			"295" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "298,298,298,298,298",
+		"eliteMonster": 299,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 280101,
+				"id": 2801,
+				"type": {
+					"normal" : [
+	295
+]
+				},
+				"word": [
+					{
+						"groupId": 280101,
+						"pId": 182,
+						"role": 3,
+						"cId": "295",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 280102,
+				"id": 2801,
+				"type": {
+					"fhit" : 295
+				},
+				"word": [
+					{
+						"groupId": 280102,
+						"pId": 183,
+						"role": 3,
+						"cId": "295",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 280103,
+				"id": 2801,
+				"type": {
+					"hit" : 295
+				},
+				"word": [
+					{
+						"groupId": 280103,
+						"pId": 184,
+						"role": 3,
+						"cId": "295",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"2802": {
+		"id": 2802,
+		"next": 0,
+		"name": "罗城城郊",
+		"groupId": 28,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"1" : 295
+		},
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"npcMonster": "297",
+		"bossId": "296",
+		"bossPosition": {
+			"296" : [
+	0,
+	0
+]
+		},
+		"monsterId": "300,300,300,300,300",
+		"eliteMonster": 301,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 280201,
+				"id": 2802,
+				"type": {
+					"normal" : [
+	296
+]
+				},
+				"word": [
+					{
+						"groupId": 280201,
+						"pId": 185,
+						"role": 3,
+						"cId": "296",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 280202,
+				"id": 2802,
+				"type": {
+					"fhit" : 296
+				},
+				"word": [
+					{
+						"groupId": 280202,
+						"pId": 186,
+						"role": 3,
+						"cId": "296",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 280203,
+				"id": 2802,
+				"type": {
+					"hit" : 296
+				},
+				"word": [
+					{
+						"groupId": 280203,
+						"pId": 187,
+						"role": 3,
+						"cId": "296",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"2901": {
+		"id": 2901,
+		"next": 2902,
+		"name": "长空栈道",
+		"groupId": 29,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "302",
+		"bossPosition": {
+			"302" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "304,304,304,304,304",
+		"eliteMonster": 305,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 290101,
+				"id": 2901,
+				"type": {
+					"normal" : [
+	302
+]
+				},
+				"word": [
+					{
+						"groupId": 290101,
+						"pId": 188,
+						"role": 3,
+						"cId": "302",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 290102,
+				"id": 2901,
+				"type": {
+					"fhit" : 302
+				},
+				"word": [
+					{
+						"groupId": 290102,
+						"pId": 189,
+						"role": 3,
+						"cId": "302",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 290103,
+				"id": 2901,
+				"type": {
+					"hit" : 302
+				},
+				"word": [
+					{
+						"groupId": 290103,
+						"pId": 190,
+						"role": 3,
+						"cId": "302",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"2902": {
+		"id": 2902,
+		"next": 0,
+		"name": "华山绝壁",
+		"groupId": 29,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"10" : 140
+		},
+		"tip": "人物等级达到140级才可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"308" : 11
+		},
+		"bossId": "303",
+		"bossPosition": {
+			"303" : [
+	-250,
+	0
+],
+			"308" : [
+	250,
+	0
+]
+		},
+		"monsterId": "306,306,306,306,306",
+		"eliteMonster": 307,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 290201,
+				"id": 2902,
+				"type": {
+					"normal" : [
+	303
+]
+				},
+				"word": [
+					{
+						"groupId": 290201,
+						"pId": 191,
+						"role": 3,
+						"cId": "303",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 290202,
+				"id": 2902,
+				"type": {
+					"fhit" : 303
+				},
+				"word": [
+					{
+						"groupId": 290202,
+						"pId": 192,
+						"role": 3,
+						"cId": "303",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 290203,
+				"id": 2902,
+				"type": {
+					"hit" : 303
+				},
+				"word": [
+					{
+						"groupId": 290203,
+						"pId": 193,
+						"role": 3,
+						"cId": "303",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"3001": {
+		"id": 3001,
+		"next": 3002,
+		"name": "连城飞瀑",
+		"groupId": 30,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"npc": "20012",
+		"bossId": "309",
+		"bossPosition": {
+			"309" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "311,311,311,311,311",
+		"eliteMonster": 312,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 300101,
+				"id": 3001,
+				"type": {
+					"normal" : [
+	309
+]
+				},
+				"word": [
+					{
+						"groupId": 300101,
+						"pId": 194,
+						"role": 3,
+						"cId": "309",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 300102,
+				"id": 3001,
+				"type": {
+					"fhit" : 309
+				},
+				"word": [
+					{
+						"groupId": 300102,
+						"pId": 195,
+						"role": 3,
+						"cId": "309",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 300103,
+				"id": 3001,
+				"type": {
+					"hit" : 309
+				},
+				"word": [
+					{
+						"groupId": 300103,
+						"pId": 196,
+						"role": 3,
+						"cId": "309",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"3002": {
+		"id": 3002,
+		"next": 0,
+		"name": "剑池",
+		"groupId": 30,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"12" : 1
+		},
+		"tip": "击杀一次江小舟才可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"316" : 11
+		},
+		"bossId": "310",
+		"bossPosition": {
+			"310" : [
+	-250,
+	0
+],
+			"316" : [
+	250,
+	0
+]
+		},
+		"monsterId": "313,313,313,313,313",
+		"eliteMonster": 314,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 300201,
+				"id": 3002,
+				"type": {
+					"normal" : [
+	310
+]
+				},
+				"word": [
+					{
+						"groupId": 300201,
+						"pId": 197,
+						"role": 3,
+						"cId": "310",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 300202,
+				"id": 3002,
+				"type": {
+					"fhit" : 310
+				},
+				"word": [
+					{
+						"groupId": 300202,
+						"pId": 198,
+						"role": 3,
+						"cId": "310",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 300203,
+				"id": 3002,
+				"type": {
+					"hit" : 310
+				},
+				"word": [
+					{
+						"groupId": 300203,
+						"pId": 199,
+						"role": 3,
+						"cId": "310",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"3101": {
+		"id": 3101,
+		"next": 3102,
+		"name": "泰山山脚",
+		"groupId": 31,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "317",
+		"bossPosition": {
+			"317" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "319,319,319,319,319",
+		"plot": [
+			{
+				"groupId": 310101,
+				"id": 3101,
+				"type": {
+					"normal" : [
+	317
+]
+				},
+				"word": [
+					{
+						"groupId": 310101,
+						"pId": 200,
+						"role": 3,
+						"cId": "317",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 310102,
+				"id": 3101,
+				"type": {
+					"fhit" : 317
+				},
+				"word": [
+					{
+						"groupId": 310102,
+						"pId": 201,
+						"role": 3,
+						"cId": "317",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 310103,
+				"id": 3101,
+				"type": {
+					"hit" : 317
+				},
+				"word": [
+					{
+						"groupId": 310103,
+						"pId": 202,
+						"role": 3,
+						"cId": "317",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"3102": {
+		"id": 3102,
+		"next": 0,
+		"name": "泰山峰巅",
+		"groupId": 31,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"npc": "306",
+		"special": {
+			"323" : 11,
+			"324" : 11
+		},
+		"bossId": "318",
+		"bossPosition": {
+			"318" : [
+	0,
+	0
+],
+			"323" : [
+	-250,
+	0
+],
+			"324" : [
+	250,
+	0
+]
+		},
+		"monsterId": "321,321,321,321,321",
+		"plot": [
+			{
+				"groupId": 310201,
+				"id": 3102,
+				"type": {
+					"normal" : [
+	318
+]
+				},
+				"word": [
+					{
+						"groupId": 310201,
+						"pId": 203,
+						"role": 3,
+						"cId": "318",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 310202,
+				"id": 3102,
+				"type": {
+					"fhit" : 318
+				},
+				"word": [
+					{
+						"groupId": 310202,
+						"pId": 204,
+						"role": 3,
+						"cId": "318",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 310203,
+				"id": 3102,
+				"type": {
+					"hit" : 318
+				},
+				"word": [
+					{
+						"groupId": 310203,
+						"pId": 205,
+						"role": 3,
+						"cId": "318",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"3201": {
+		"id": 3201,
+		"next": 3202,
+		"name": "天山崖底",
+		"groupId": 32,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"332" : 20
+		},
+		"bossId": "325",
+		"bossPosition": {
+			"325" : [
+	0,
+	0
+],
+			"332" : [
+	-300,
+	0
+]
+		},
+		"monsterId": "327,327,327,327,327",
+		"eliteMonster": 328,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 320101,
+				"id": 3201,
+				"type": {
+					"normal" : [
+	325
+]
+				},
+				"word": [
+					{
+						"groupId": 320101,
+						"pId": 206,
+						"role": 3,
+						"cId": "325",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 320102,
+				"id": 3201,
+				"type": {
+					"fhit" : 325
+				},
+				"word": [
+					{
+						"groupId": 320102,
+						"pId": 207,
+						"role": 3,
+						"cId": "325",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 320103,
+				"id": 3201,
+				"type": {
+					"hit" : 325
+				},
+				"word": [
+					{
+						"groupId": 320103,
+						"pId": 208,
+						"role": 3,
+						"cId": "325",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"3202": {
+		"id": 3202,
+		"next": 0,
+		"name": "天山秘洞",
+		"groupId": 32,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"12" : 10
+		},
+		"tip": "击杀10只朱武打手方可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"333" : 11,
+			"334" : 11
+		},
+		"bossId": "326",
+		"bossPosition": {
+			"326" : [
+	0,
+	0
+],
+			"333" : [
+	300,
+	0
+],
+			"334" : [
+	-300,
+	0
+]
+		},
+		"monsterId": "329,329,329,329,329",
+		"eliteMonster": 330,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 320201,
+				"id": 3202,
+				"type": {
+					"normal" : [
+	326
+]
+				},
+				"word": [
+					{
+						"groupId": 320201,
+						"pId": 209,
+						"role": 3,
+						"cId": "326",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 320202,
+				"id": 3202,
+				"type": {
+					"fhit" : 326
+				},
+				"word": [
+					{
+						"groupId": 320202,
+						"pId": 210,
+						"role": 3,
+						"cId": "326",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 320203,
+				"id": 3202,
+				"type": {
+					"hit" : 326
+				},
+				"word": [
+					{
+						"groupId": 320203,
+						"pId": 211,
+						"role": 3,
+						"cId": "326",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"3301": {
+		"id": 3301,
+		"next": 3302,
+		"name": "白鹿门",
+		"groupId": 33,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "336",
+		"bossPosition": {
+			"336" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "338,338,338,338,338",
+		"eliteMonster": 339,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 330101,
+				"id": 3301,
+				"type": {
+					"normal" : [
+	336
+]
+				},
+				"word": [
+					{
+						"groupId": 330101,
+						"pId": 212,
+						"role": 3,
+						"cId": "336",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 330102,
+				"id": 3301,
+				"type": {
+					"fhit" : 336
+				},
+				"word": [
+					{
+						"groupId": 330102,
+						"pId": 213,
+						"role": 3,
+						"cId": "336",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 330103,
+				"id": 3301,
+				"type": {
+					"hit" : 336
+				},
+				"word": [
+					{
+						"groupId": 330103,
+						"pId": 214,
+						"role": 3,
+						"cId": "336",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"3302": {
+		"id": 3302,
+		"next": 0,
+		"name": "白鹿殿",
+		"groupId": 33,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"5" : 177
+		},
+		"tip": "完成主线xxx方可进入",
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"342" : 11
+		},
+		"bossId": "337",
+		"bossPosition": {
+			"337" : [
+	-250,
+	0
+],
+			"342" : [
+	250,
+	0
+]
+		},
+		"monsterId": "340,340,340,340,340",
+		"eliteMonster": 341,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 330201,
+				"id": 3302,
+				"type": {
+					"normal" : [
+	337
+]
+				},
+				"word": [
+					{
+						"groupId": 330201,
+						"pId": 215,
+						"role": 3,
+						"cId": "337",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 330202,
+				"id": 3302,
+				"type": {
+					"fhit" : 337
+				},
+				"word": [
+					{
+						"groupId": 330202,
+						"pId": 216,
+						"role": 3,
+						"cId": "337",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 330203,
+				"id": 3302,
+				"type": {
+					"hit" : 337
+				},
+				"word": [
+					{
+						"groupId": 330203,
+						"pId": 217,
+						"role": 3,
+						"cId": "337",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"3401": {
+		"id": 3401,
+		"next": 3402,
+		"name": "奉天校场",
+		"groupId": 34,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "343",
+		"bossPosition": {
+			"343" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "345,345,345,345,345",
+		"eliteMonster": 346,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 340101,
+				"id": 3401,
+				"type": {
+					"normal" : [
+	343
+]
+				},
+				"word": [
+					{
+						"groupId": 340101,
+						"pId": 218,
+						"role": 3,
+						"cId": "343",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 340102,
+				"id": 3401,
+				"type": {
+					"fhit" : 343
+				},
+				"word": [
+					{
+						"groupId": 340102,
+						"pId": 219,
+						"role": 3,
+						"cId": "343",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 340103,
+				"id": 3401,
+				"type": {
+					"hit" : 343
+				},
+				"word": [
+					{
+						"groupId": 340103,
+						"pId": 220,
+						"role": 3,
+						"cId": "343",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"3402": {
+		"id": 3402,
+		"next": 0,
+		"name": "承运台",
+		"groupId": 34,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"10" : 160
+		},
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"349" : 13,
+			"373" : 16
+		},
+		"bossId": "344",
+		"bossPosition": {
+			"344" : [
+	-250,
+	0
+],
+			"349" : [
+	250,
+	0
+]
+		},
+		"monsterId": "347,347,347,347,347",
+		"eliteMonster": 348,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 340201,
+				"id": 3402,
+				"type": {
+					"normal" : [
+	344
+]
+				},
+				"word": [
+					{
+						"groupId": 340201,
+						"pId": 221,
+						"role": 3,
+						"cId": "344",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 340202,
+				"id": 3402,
+				"type": {
+					"fhit" : 344
+				},
+				"word": [
+					{
+						"groupId": 340202,
+						"pId": 222,
+						"role": 3,
+						"cId": "344",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 340203,
+				"id": 3402,
+				"type": {
+					"hit" : 344
+				},
+				"word": [
+					{
+						"groupId": 340203,
+						"pId": 223,
+						"role": 3,
+						"cId": "344",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 2,
+		"alive": 3
+	},
+	"3501": {
+		"id": 3501,
+		"next": 3502,
+		"name": "雪岭坡",
+		"groupId": 35,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "351",
+		"bossPosition": {
+			"351" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "353,353,353,353,353",
+		"eliteMonster": 354,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 350101,
+				"id": 3501,
+				"type": {
+					"normal" : [
+	351
+]
+				},
+				"word": [
+					{
+						"groupId": 350101,
+						"pId": 224,
+						"role": 3,
+						"cId": "351",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 350102,
+				"id": 3501,
+				"type": {
+					"fhit" : 351
+				},
+				"word": [
+					{
+						"groupId": 350102,
+						"pId": 225,
+						"role": 3,
+						"cId": "351",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 350103,
+				"id": 3501,
+				"type": {
+					"hit" : 351
+				},
+				"word": [
+					{
+						"groupId": 350103,
+						"pId": 226,
+						"role": 3,
+						"cId": "351",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"3502": {
+		"id": 3502,
+		"next": 0,
+		"name": "雪岭冰窟",
+		"groupId": 35,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"374" : 11
+		},
+		"bossId": "352",
+		"bossPosition": {
+			"352" : [
+	-250,
+	0
+],
+			"374" : [
+	250,
+	0
+]
+		},
+		"monsterId": "355,355,355,355,355",
+		"eliteMonster": 356,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 350201,
+				"id": 3502,
+				"type": {
+					"normal" : [
+	352
+]
+				},
+				"word": [
+					{
+						"groupId": 350201,
+						"pId": 227,
+						"role": 3,
+						"cId": "352",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 350202,
+				"id": 3502,
+				"type": {
+					"fhit" : 352
+				},
+				"word": [
+					{
+						"groupId": 350202,
+						"pId": 228,
+						"role": 3,
+						"cId": "352",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 350203,
+				"id": 3502,
+				"type": {
+					"hit" : 352
+				},
+				"word": [
+					{
+						"groupId": 350203,
+						"pId": 229,
+						"role": 3,
+						"cId": "352",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 1,
+		"alive": 3
+	},
+	"3601": {
+		"id": 3601,
+		"next": 3602,
+		"name": "乌蒙山道",
+		"groupId": 36,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "358",
+		"bossPosition": {
+			"358" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "360,360,360,360,360",
+		"eliteMonster": 361,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 360101,
+				"id": 3601,
+				"type": {
+					"normal" : [
+	358
+]
+				},
+				"word": [
+					{
+						"groupId": 360101,
+						"pId": 230,
+						"role": 3,
+						"cId": "358",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 360102,
+				"id": 3601,
+				"type": {
+					"fhit" : 358
+				},
+				"word": [
+					{
+						"groupId": 360102,
+						"pId": 231,
+						"role": 3,
+						"cId": "358",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 360103,
+				"id": 3601,
+				"type": {
+					"hit" : 358
+				},
+				"word": [
+					{
+						"groupId": 360103,
+						"pId": 232,
+						"role": 3,
+						"cId": "358",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"3602": {
+		"id": 3602,
+		"next": 0,
+		"name": "玉清宫",
+		"groupId": 36,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"12" : 1
+		},
+		"tip": "击杀一次雅艾云",
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"364" : 17,
+			"365" : 17
+		},
+		"bossId": "359",
+		"bossPosition": {
+			"359" : [
+	0,
+	0
+],
+			"364" : [
+	-250,
+	0
+],
+			"365" : [
+	250,
+	0
+]
+		},
+		"monsterId": "362,362,362,362,362",
+		"eliteMonster": 363,
+		"eliteMonsterPro": 300,
+		"plot": [
+			{
+				"groupId": 360201,
+				"id": 3602,
+				"type": {
+					"normal" : [
+	359
+]
+				},
+				"word": [
+					{
+						"groupId": 360201,
+						"pId": 233,
+						"role": 3,
+						"cId": "359",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 360202,
+				"id": 3602,
+				"type": {
+					"fhit" : 359
+				},
+				"word": [
+					{
+						"groupId": 360202,
+						"pId": 234,
+						"role": 3,
+						"cId": "359",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 360203,
+				"id": 3602,
+				"type": {
+					"hit" : 359
+				},
+				"word": [
+					{
+						"groupId": 360203,
+						"pId": 235,
+						"role": 3,
+						"cId": "359",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 3,
+		"alive": 3
+	},
+	"3701": {
+		"id": 3701,
+		"next": 3702,
+		"name": "雾林",
+		"groupId": 37,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "366",
+		"bossPosition": {
+			"366" : [
+	-100,
+	0
+]
+		},
+		"monsterId": "368,368,368,368,368",
+		"plot": [
+			{
+				"groupId": 370101,
+				"id": 3701,
+				"type": {
+					"normal" : [
+	366
+]
+				},
+				"word": [
+					{
+						"groupId": 370101,
+						"pId": 236,
+						"role": 3,
+						"cId": "366",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 370102,
+				"id": 3701,
+				"type": {
+					"fhit" : 366
+				},
+				"word": [
+					{
+						"groupId": 370102,
+						"pId": 237,
+						"role": 3,
+						"cId": "366",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 370103,
+				"id": 3701,
+				"type": {
+					"hit" : 366
+				},
+				"word": [
+					{
+						"groupId": 370103,
+						"pId": 238,
+						"role": 3,
+						"cId": "366",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"escortRobot": "1",
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"3702": {
+		"id": 3702,
+		"next": 0,
+		"name": "神农地宫",
+		"groupId": 37,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 1,
+		"lv": 1,
+		"condition": {
+			"12" : 10
+		},
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"special": {
+			"372" : 11
+		},
+		"bossId": "367",
+		"bossPosition": {
+			"367" : [
+	0,
+	0
+],
+			"372" : [
+	0,
+	0
+]
+		},
+		"monsterId": "370,370,370,370,370",
+		"plot": [
+			{
+				"groupId": 370201,
+				"id": 3702,
+				"type": {
+					"normal" : [
+	367
+]
+				},
+				"word": [
+					{
+						"groupId": 370201,
+						"pId": 239,
+						"role": 3,
+						"cId": "367",
+						"desc": "待机",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 370202,
+				"id": 3702,
+				"type": {
+					"fhit" : 367
+				},
+				"word": [
+					{
+						"groupId": 370202,
+						"pId": 240,
+						"role": 3,
+						"cId": "367",
+						"desc": "第一次打我",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 370203,
+				"id": 3702,
+				"type": {
+					"hit" : 367
+				},
+				"word": [
+					{
+						"groupId": 370203,
+						"pId": 241,
+						"role": 3,
+						"cId": "367",
+						"desc": "战斗中",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"expAdd": 1,
+		"expAddMax": 10,
+		"drop": 4,
+		"alive": 3
+	},
+	"99901": {
+		"id": 99901,
+		"next": 0,
+		"name": "黑木神教",
+		"groupId": 999,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 5,
+		"bossId": "3001",
+		"bossPosition": {
+			"3001" : [
+	0,
+	0
+]
+		},
+		"plot": [
+			{
+				"groupId": 9990101,
+				"id": 99901,
+				"type": {
+					"normal" : [
+	3001
+]
+				},
+				"word": [
+					{
+						"groupId": 9990101,
+						"pId": 242,
+						"role": 3,
+						"cId": "3001",
+						"desc": "你若执意不肯归附我教，便往棺材里去罢",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 9990102,
+				"id": 99901,
+				"type": {
+					"fhit" : 3001
+				},
+				"word": [
+					{
+						"groupId": 9990102,
+						"pId": 243,
+						"role": 3,
+						"cId": "3001",
+						"desc": "再不退去，我治得你们求生不得求死不能",
+						"dir": 2
+					}
+				]
+			},
+			{
+				"groupId": 9990103,
+				"id": 99901,
+				"type": {
+					"hit" : 3001
+				},
+				"word": [
+					{
+						"groupId": 9990103,
+						"pId": 244,
+						"role": 3,
+						"cId": "3001",
+						"desc": "都说我负天下人，天下人又何曾善待我！",
+						"dir": 2
+					}
+				]
+			}
+		],
+		"drop": 5,
+		"alive": 3
+	},
+	"100101": {
+		"id": 100101,
+		"next": 100102,
+		"name": "少林山门",
+		"groupId": 1001,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"special": {
+			"1201" : 18,
+			"1202" : 18
+		},
+		"bossPosition": {
+			"1201" : [
+	-250,
+	250
+],
+			"1202" : [
+	250,
+	250
+],
+			"50008" : [
+	0,
+	250
+]
+		},
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100102": {
+		"id": 100102,
+		"next": 0,
+		"name": "般若院",
+		"groupId": 1001,
+		"pk": 0,
+		"chase": 0,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"npc": "1,2,3",
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100201": {
+		"id": 100201,
+		"next": 100202,
+		"name": "武当山门",
+		"groupId": 1002,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"special": {
+			"1203" : 18,
+			"1204" : 18
+		},
+		"bossPosition": {
+			"1203" : [
+	-250,
+	250
+],
+			"1204" : [
+	250,
+	250
+],
+			"50006" : [
+	0,
+	250
+]
+		},
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100202": {
+		"id": 100202,
+		"next": 0,
+		"name": "太和宫",
+		"groupId": 1002,
+		"pk": 0,
+		"chase": 0,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"npc": "4,5,6",
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100301": {
+		"id": 100301,
+		"next": 100302,
+		"name": "峨眉山门",
+		"groupId": 1003,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"special": {
+			"1205" : 18,
+			"1206" : 18
+		},
+		"bossPosition": {
+			"1205" : [
+	-250,
+	250
+],
+			"1206" : [
+	250,
+	250
+]
+		},
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100302": {
+		"id": 100302,
+		"next": 0,
+		"name": "峨眉金顶",
+		"groupId": 1003,
+		"pk": 0,
+		"chase": 0,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"npc": "7,8,9",
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100401": {
+		"id": 100401,
+		"next": 100402,
+		"name": "明教沙堡",
+		"groupId": 1004,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"special": {
+			"1207" : 18,
+			"1208" : 18
+		},
+		"bossPosition": {
+			"1207" : [
+	-250,
+	250
+],
+			"1208" : [
+	250,
+	250
+],
+			"50004" : [
+	0,
+	250
+],
+			"50010" : [
+	0,
+	250
+]
+		},
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100402": {
+		"id": 100402,
+		"next": 0,
+		"name": "光明顶",
+		"groupId": 1004,
+		"pk": 0,
+		"chase": 0,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"npc": "10,11,12",
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100501": {
+		"id": 100501,
+		"next": 100502,
+		"name": "丐帮甬道",
+		"groupId": 1005,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"special": {
+			"1209" : 18,
+			"1210" : 18
+		},
+		"bossPosition": {
+			"1209" : [
+	250,
+	250
+],
+			"1210" : [
+	-250,
+	250
+]
+		},
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100502": {
+		"id": 100502,
+		"next": 0,
+		"name": "聚贤集",
+		"groupId": 1005,
+		"pk": 0,
+		"chase": 0,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"npc": "22,23,24",
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100601": {
+		"id": 100601,
+		"next": 100602,
+		"name": "合欢谷口",
+		"groupId": 1006,
+		"pk": 1,
+		"chase": 1,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"special": {
+			"1211" : 18,
+			"1212" : 18
+		},
+		"bossPosition": {
+			"1211" : [
+	-250,
+	250
+],
+			"1212" : [
+	250,
+	250
+],
+			"50002" : [
+	0,
+	250
+]
+		},
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"100602": {
+		"id": 100602,
+		"next": 0,
+		"name": "听香坊",
+		"groupId": 1006,
+		"pk": 0,
+		"chase": 0,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"npc": "16,17,18",
+		"plot": [
+		],
+		"expAdd": 1,
+		"expAddMax": 10
+	},
+	"200001": {
+		"id": 200001,
+		"next": 0,
+		"name": "帮派",
+		"groupId": 2001,
+		"pk": 0,
+		"chase": 0,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"bossId": "100101,100102,100103,100104",
+		"plot": [
+		]
+	},
+	"200003": {
+		"id": 200003,
+		"next": 0,
+		"name": "襄阳城",
+		"groupId": 2003,
+		"pk": 0,
+		"chase": 0,
+		"isShow": 0,
+		"task": "0",
+		"taskId": 0,
+		"cd": 0,
+		"npc": "32,29,30",
+		"plot": [
+		]
+	}
+}
